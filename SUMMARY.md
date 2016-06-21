@@ -37,7 +37,7 @@
 * 7 Native Modules
    * 6.1 iOS
    * 6.2 Android
-* 8 Hot updae
+* 8 Hot update
    * 7.1 iOS
    * 7.2 Android
 
