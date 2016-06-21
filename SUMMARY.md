@@ -27,4 +27,5 @@
    * 5.2 let, const
    * 5.3 function, extends
    * 5.4 this, bind, =>
+   * 5.5 map, array, string
 
