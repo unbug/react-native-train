@@ -28,7 +28,7 @@
    * 5.1 export, import
    * 5.2 let, const
    * 5.3 function, extends
-   * 5.4 map, array, string
+   * 5.4 map, array, string, spread operator 
    * 5.5 this, bind, =>
    * 5.6 Promise
 * 6 Data
