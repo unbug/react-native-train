@@ -38,6 +38,6 @@
    * 7.1 iOS
    * 7.2 Android
 * 8 Hot update
-   * 7.1 iOS
+   * 8.1 iOS
    * 7.2 Android
 
