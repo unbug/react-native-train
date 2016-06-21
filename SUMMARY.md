@@ -12,4 +12,5 @@
    * 2.3 Lifecyle
    * 2.4 Events
 * 3 Styles
+   * 3.1 Flexbox
 
