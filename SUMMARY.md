@@ -35,7 +35,7 @@
    * 6.1 Fetch
    * 6.2 Persistent Data
 * 7 Native Modules
-   * 6.1 iOS
+   * 7.1 iOS
    * 6.2 Android
 * 8 Hot update
    * 7.1 iOS
