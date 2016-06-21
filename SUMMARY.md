@@ -19,4 +19,5 @@
    * 4.1 Redux+React
    * 4.2 Containers & Components
    * 4.3 Actions & Reducers
+   * 4.4 Statics, Constants, etc
 
