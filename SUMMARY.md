@@ -30,7 +30,7 @@
    * 5.4 map, array, string
    * 5.5 this, bind, =>
    * 5.6 Promise
-* 6 Native Modules
+* 7 Native Modules
    * 6.1 iOS
    * 6.2 Android
 * 7 Hot updae
