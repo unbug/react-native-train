@@ -17,4 +17,5 @@
    * 3.3 Size & Dimensions
 * 4 Architecture
    * 4.1 Redux+React
+   * 4.2 Actions
 
