@@ -11,6 +11,7 @@
    * 2.2 States & Props
    * 2.3 Lifecyle
    * 2.4 Events
+   * 2.5 View, Text, Image, etc
 * 3 Styles
    * 3.1 Flexbox
    * 3.2 Absolute & Relative
