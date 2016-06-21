@@ -21,4 +21,5 @@
    * 4.3 Actions & Reducers
    * 4.4 Statics, Constants, etc
    * 4.5 Deja React Native App
+* 5 ES6/7
 
