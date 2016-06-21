@@ -4,4 +4,5 @@
 * [1 First look](chapter1.md)
    * 1.1 Building an app in 5 minutes
    * 1.2 How it works
+   * 1.3 Debug tools
 
