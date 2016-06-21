@@ -31,6 +31,7 @@
    * 5.5 this, bind, =>
    * 5.6 Promise
 * 6 Data
+   * 6.1 Fetch
 * 7 Native Modules
    * 6.1 iOS
    * 6.2 Android
