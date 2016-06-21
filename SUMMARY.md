@@ -29,5 +29,5 @@
    * 5.3 function, extends
    * 5.4 map, array, string
    * 5.5 this, bind, =>
-* 6 Hot updae
+* 7 Hot updae
 
