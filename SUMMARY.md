@@ -13,4 +13,5 @@
    * 2.4 Events
 * 3 Styles
    * 3.1 Flexbox
+   * 3.2 Absolute & Relative
 
