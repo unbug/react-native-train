@@ -18,4 +18,5 @@
 * 4 Architecture
    * 4.1 Redux+React
    * 4.2 Containers & Components
+   * 4.3 Actions & Reducers
 
