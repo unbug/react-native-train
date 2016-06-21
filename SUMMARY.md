@@ -21,7 +21,7 @@
    * 4.2 Containers & Components
    * 4.3 Actions & Reducers
    * 4.4 Statics, Constants, etc
-   * 4.5 Deja React Native App
+   * 4.6 Deja React Native App
    * 4.5 Naming convention
 * 5 ES6/7
    * 5.1 export, import
