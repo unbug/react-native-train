@@ -33,7 +33,7 @@
 * 7 Native Modules
    * 6.1 iOS
    * 6.2 Android
-* 7 Hot updae
+* 8 Hot updae
    * 7.1 iOS
    * 7.2 Android
 * 6 Persistent Data
