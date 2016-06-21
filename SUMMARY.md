@@ -10,4 +10,5 @@
    * 2.1 Render & JSX
    * 2.2 States & Props
    * 2.3 Lifecyle
+   * 2.4 Events
 
