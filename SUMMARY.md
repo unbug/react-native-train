@@ -15,6 +15,7 @@
    * 3.1 Flexbox
    * 3.2 Absolute & Relative
    * 3.3 Size & Dimensions
+   * 3.4 Inherit
 * 4 Architecture
    * 4.1 Redux+React
    * 4.2 Containers & Components
