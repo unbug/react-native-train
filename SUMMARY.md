@@ -8,4 +8,5 @@
    * 1.4 DOCs & APIs
 * 2 Components
    * 2.1 Render & JSX
+   * 2.2 States & Props
 
