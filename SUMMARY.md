@@ -30,4 +30,5 @@
    * 5.4 map, array, string
    * 5.5 this, bind, =>
 * 7 Hot updae
+   * 7.1 iOS
 
