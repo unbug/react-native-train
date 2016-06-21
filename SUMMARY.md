@@ -30,11 +30,11 @@
    * 5.4 map, array, string
    * 5.5 this, bind, =>
    * 5.6 Promise
+* 6 Persistent Data
 * 7 Native Modules
    * 6.1 iOS
    * 6.2 Android
 * 8 Hot updae
    * 7.1 iOS
    * 7.2 Android
-* 6 Persistent Data
 
