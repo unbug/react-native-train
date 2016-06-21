@@ -23,4 +23,5 @@
    * 4.5 Deja React Native App
 * 5 ES6/7
    * 5.1 export, import
+   * 5.2 let, const
 
