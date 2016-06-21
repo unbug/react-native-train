@@ -39,5 +39,5 @@
    * 7.2 Android
 * 8 Hot update
    * 8.1 iOS
-   * 7.2 Android
+   * 8.2 Android
 
