@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [1 First look](chapter1.md)
-   * 1.1 Building an app in 5 minutes
+   * [1.1 Building an app in 5 minutes](11_building_an_app_in_5_minutes.md)
    * 1.2 How it works
    * 1.3 Debug tools
    * 1.4 DOCs & APIs
@@ -28,7 +28,7 @@
    * 5.1 export, import
    * 5.2 let, const
    * 5.3 function, extends
-   * 5.4 map, array, string, spread operator, destructuring assignment 
+   * 5.4 map, array, string, spread operator, destructuring assignment
    * 5.5 this, bind, =>
    * 5.6 Promise
 * 6 Data
