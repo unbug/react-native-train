@@ -10,6 +10,7 @@ react-native init testRn
 react-native run-ios
 ```
 or open `testRn/ios/testRn.xcodeproj` and build with XCode's play button
+
 ![](QQ20160622-0.png)
 
 or if the app already builded, start the webserver 
