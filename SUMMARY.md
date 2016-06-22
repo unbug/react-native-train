@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [1 First look](chapter1.md)
    * [1.1 Building an app in 5 minutes](11_building_an_app_in_5_minutes.md)
-   * 1.2 How it works
+   * [1.2 How it works](12_how_it_works.md)
    * 1.3 Debug tools
    * 1.4 DOCs & APIs
 * 2 Components
