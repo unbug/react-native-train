@@ -6,7 +6,7 @@
    * [1.2 How it works](12_how_it_works.md)
    * 1.3 Debug tools
    * 1.4 DOCs & APIs
-   * 1.5 Resources
+   * [1.5 Resources](15_resources.md)
 * 2 Components
    * 2.1 Render & JSX
    * 2.2 States & Props
