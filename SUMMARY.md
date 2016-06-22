@@ -13,7 +13,7 @@
    * 2.3 Lifecyle
    * 2.4 Events
    * 2.5 View, Text, Image, etc
-   * 2.6 Resources
+   * [2.6 Resources](26_resources.md)
 * 3 Styles
    * 3.1 Flexbox
    * 3.2 Absolute & Relative
