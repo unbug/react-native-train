@@ -39,6 +39,7 @@
 * 7 Native Modules
    * 7.1 iOS
    * 7.2 Android
+   * 7.3 Resources
 * 8 Hot update
    * 8.1 iOS
    * 8.2 Android
