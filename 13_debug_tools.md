@@ -11,4 +11,9 @@
 console.log('some text');
 debugger;//breaking point
 ```
-4. [nuclide](https://nuclide.io/)
+4. [Atom](https://atom.io/) & [nuclide](https://nuclide.io/)
+![](QQ20160623-3.png)
+
+5. inspect
+
+![](QQ20160623-4.png)
