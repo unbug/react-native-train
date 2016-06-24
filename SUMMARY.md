@@ -8,7 +8,7 @@
    * [1.4 DOCs & APIs](14_docs_&_apis.md)
    * [1.5 Resources](15_resources.md)
 * 2 Components
-   * 2.1 Render & JSX
+   * [2.1 Render & JSX](21_render_&_jsx.md)
    * 2.2 States & Props
    * 2.3 Lifecyle
    * 2.4 Events
