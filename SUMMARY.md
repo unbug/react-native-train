@@ -37,9 +37,9 @@
    * 6.1 Fetch
    * 6.2 Persistent Data
 * 7 Native Modules
-   * 7.1 Communication between JS and Native 
+   * 7.1 Communication between JS and Native
    * 7.2 Android
-   * [7.3 Resources](73_resources.md)
+   * [7.4 Resources](73_resources.md)
 * 8 Hot update
    * 8.1 iOS
    * 8.2 Android
