@@ -10,7 +10,7 @@
 * 2 Components
    * [2.1 Render & JSX](21_render_&_jsx.md)
    * [2.2 Lifecyle](23_lifecyle.md)
-   * 2.2 States & Props
+   * 2.3 States & Props
    * 2.4 Events
    * 2.5 View, Text, Image, etc
    * [2.6 Resources](26_resources.md)
