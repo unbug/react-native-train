@@ -17,7 +17,7 @@
 
 2. Lifetime
  - componentWillReceiveProps
- - shouldComponentUpdate
+ - shouldComponentUpdate // return true|false
  - componentWillUpdate
  - render
  - componentDidUpdate
