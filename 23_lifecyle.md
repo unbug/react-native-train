@@ -18,7 +18,12 @@
 2. Lifetime
  - componentWillReceiveProps
  - **shouldComponentUpdate // return true|false**
- - componentWillUpdate
+   ```
+   shouldComponentUpdate(nextProps, nextState) {
+     return nextProps.id !== this.props.id;
+   }
+   ```
+ - componentWillUpdate //not called for the initial render
  - render
  - componentDidUpdate
  
