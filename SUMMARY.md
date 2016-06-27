@@ -36,7 +36,7 @@
 * 6 Data
    * 6.1 Fetch
    * 6.2 Persistent Data
-* 7 Native Modules
+* [7 Native Modules](7_native_modules.md)
    * 7.1 iOS
    * 7.2 Android
    * [7.3 Resources](73_resources.md)
