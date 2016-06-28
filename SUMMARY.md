@@ -46,7 +46,7 @@
        * 7.2.2 Java call JS
        * 7.2.3 Native View Component
    * [7.3 Resources](73_resources.md)
-* [8 Hot update](8_hot_update.md)
+* [8 Integration & Hot update](8_hot_update.md)
    * 8.1 iOS
        * 8.1.1 Integration with current app
    * 8.2 Android
