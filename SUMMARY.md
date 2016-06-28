@@ -50,6 +50,7 @@
    * 8.1 iOS
        * 8.1.1 Integration with current app
    * 8.2 Android
+       * 8.2.1 Integration with current app
    * [8.3 Resources](83_resources.md)
 * [Resources](resources.md)
 
