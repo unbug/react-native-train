@@ -38,7 +38,7 @@
    * 6.2 Persistent Data
 * [7 Native Modules](7_native_modules.md)
    * [7.1 iOS](71_ios.md)
-   * 7.2 Android
+   * [7.2 Android](72_android.md)
    * [7.3 Resources](73_resources.md)
 * 8 Hot update
    * 8.1 iOS
