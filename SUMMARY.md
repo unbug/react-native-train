@@ -40,6 +40,7 @@
    * [7.1 iOS](71_ios.md)
        * 7.1.1 JS call OC
        * 7.1.2 OC call JS
+       * 7.1.3 Native View Component
    * [7.2 Android](72_android.md)
    * [7.3 Resources](73_resources.md)
 * 8 Hot update
