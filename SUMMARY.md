@@ -17,7 +17,7 @@
 * 3 Styles
    * 3.1 Flexbox
    * 3.2 Absolute & Relative
-   * 3.3 Size & Dimensions
+   * 3.3 Size & Dimensions & onLayout
    * 3.4 Inheritance
 * 4 Architecture
    * 4.1 Redux+React
