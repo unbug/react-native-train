@@ -43,6 +43,7 @@
        * 7.1.3 Native View Component
    * [7.2 Android](72_android.md)
        * 7.2.1 JS call Java
+       * 7.2.2 Java call JS
    * [7.3 Resources](73_resources.md)
 * 8 Hot update
    * 8.1 iOS
