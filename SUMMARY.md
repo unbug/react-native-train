@@ -47,8 +47,8 @@
        * 7.2.3 Native View Component
    * [7.3 Resources](73_resources.md)
 * [8 Integration & Hot update](8_hot_update.md)
-   * 8.1 iOS
    * 8.1.1 Integration with current app
+   * 8.1 iOS
    * 8.2 Android
        * 8.2.1 Integration with current app
    * [8.3 Resources](83_resources.md)
