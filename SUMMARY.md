@@ -51,5 +51,6 @@
    * 8.2 Android
    * [8.3 Resources](83_resources.md)
 * 9 Hot Update
+   * 9.1 iOS
 * [Resources](resources.md)
 
