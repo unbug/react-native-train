@@ -46,7 +46,7 @@
        * 7.2.2 Java call JS
        * 7.2.3 Native View Component
    * [7.3 Resources](73_resources.md)
-* [8 Integration](8integration_md.md)
+* [8 Integration](8_integration.md)
    * 8.1 iOS
    * 8.2 Android
    * [8.3 Resources](83_resources.md)
