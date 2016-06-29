@@ -53,5 +53,6 @@
 * 9 Hot Update
    * 9.1 iOS
    * 9.2 Android
+   * 9.3 Resources
 * [Resources](resources.md)
 
