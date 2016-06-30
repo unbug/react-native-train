@@ -94,9 +94,7 @@ class Test extends Component {
         onResponderRelease={this.handleResponderRelease}
         onResponderTerminationRequest={this.handleResponderTerminationRequest}
         onResponderTerminate={this.handleResponderTerminate}>
-          <View>
-            <Text>Press me!</Text>
-          </View>
+          <Text>Press me!</Text>
       </View>
     );
   }
