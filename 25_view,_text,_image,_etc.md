@@ -1,4 +1,4 @@
-# 2.5 View, Text, Image, etc
+# 2.2 View, Text, Image, etc
 
 1. [Core Components](https://facebook.github.io/react-native/docs/tutorial-core-components.html)
 
