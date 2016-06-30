@@ -1,6 +1,6 @@
 # 2.4 Events
 
-1. [`<TouchableHighlight/>`](https://facebook.github.io/react-native/docs/touchablehighlight.html)
+1.[`<TouchableHighlight/>`](https://facebook.github.io/react-native/docs/touchablehighlight.html)
 
 ```
 class Header extends Component {
@@ -32,7 +32,7 @@ class Header extends Component {
 }
 ```
 
-2. [GestureResponder System Lifecycle](https://facebook.github.io/react-native/docs/gesture-responder-system.html#responder-lifecycle)
+2.[GestureResponder System Lifecycle](https://facebook.github.io/react-native/docs/gesture-responder-system.html#responder-lifecycle)
 
 
 
