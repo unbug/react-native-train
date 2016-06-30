@@ -121,119 +121,46 @@ class Test extends Component {
 3.[PanResponder](https://facebook.github.io/react-native/docs/panresponder.html)
 
 ```
-// Adapted from
-// https://github.com/facebook/react-native/blob/master/
-// Examples/UIExplorer/PanResponderExample.js
-..
-...
-var CIRCLE_SIZE = 40;
-var CIRCLE_COLOR = 'blue';
-var CIRCLE_HIGHLIGHT_COLOR = 'green';
-var PanResponderExample = React.createClass({
-  // Set some initial values.
-  _panResponder: {}, 
-  _previousLeft: 0, 
-  _previousTop: 0, 
-  _circleStyles: {}, 
-  circle: null,
-  getInitialState: function() { 
-    return {
-          numberActiveTouches: 0,
-          moveX: 0,
-          moveY: 0,
-          x0: 0,
-          y0: 0,
-          dx: 0,
-          dy: 0,
-          vx: 0,
-          vy: 0,
-    } 
-  },
-  componentWillMount: function() { 
+componentWillMount: function() {
     this._panResponder = PanResponder.create({
-      onStartShouldSetPanResponder: this._handleStartShouldSetPanResponder,
-      onMoveShouldSetPanResponder: this._handleMoveShouldSetPanResponder, 
-      onPanResponderGrant: this._handlePanResponderGrant, 
-      onPanResponderMove: this._handlePanResponderMove, 
-      onPanResponderRelease: this._handlePanResponderEnd, 
-      onPanResponderTerminate: this._handlePanResponderEnd,
+      // Ask to be the responder:
+      onStartShouldSetPanResponder: (evt, gestureState) => true,
+      onStartShouldSetPanResponderCapture: (evt, gestureState) => true,
+      onMoveShouldSetPanResponder: (evt, gestureState) => true,
+      onMoveShouldSetPanResponderCapture: (evt, gestureState) => true,
+
+      onPanResponderGrant: (evt, gestureState) => {
+        // The guesture has started. Show visual feedback so the user knows
+        // what is happening!
+
+        // gestureState.{x,y}0 will be set to zero now
+      },
+      onPanResponderMove: (evt, gestureState) => {
+        // The most recent move distance is gestureState.move{X,Y}
+
+        // The accumulated gesture distance since becoming responder is
+        // gestureState.d{x,y}
+      },
+      onPanResponderTerminationRequest: (evt, gestureState) => true,
+      onPanResponderRelease: (evt, gestureState) => {
+        // The user has released all touches while this view is the
+        // responder. This typically means a gesture has succeeded
+      },
+      onPanResponderTerminate: (evt, gestureState) => {
+        // Another component has become the responder, so this gesture
+        // should be cancelled
+      },
+      onShouldBlockNativeResponder: (evt, gestureState) => {
+        // Returns whether this component should block native components from becoming the JS
+        // responder. Returns true by default. Is currently only supported on android.
+        return true;
+      },
     });
-    this._previousLeft = 20; 
-    this._previousTop = 84; 
-    this._circleStyles = {
-      left: this._previousLeft,
-      top: this._previousTop, 
-    };
   },
-  componentDidMount: function() { 
-    this._updatePosition();
-  },
-  render: function() { 
+
+  render: function() {
     return (
-        <View style={styles.container}>
-          <View 
-          ref={(circle) => { this.circle = circle; }}
-          style={styles.circle} {...this._panResponder.panHandlers}/>
-          <Text> 
-            {this.state.numberActiveTouches} touches, dx: {this.state.dx},
-            dy: {this.state.dy},
-            vx: {this.state.vx},
-            vy: {this.state.vy}
-          </Text>
-        </View>
-    ); 
+      <View {...this._panResponder.panHandlers} />
+    );
   },
-  // _highlight and _unHighlight get called by PanResponder methods, 
-  // providing visual feedback to the user.
-  _highlight: function() {
-    this.circle && this.circle.setNativeProps({ 
-      backgroundColor: CIRCLE_HIGHLIGHT_COLOR
-    }); 
-  },
-  _unHighlight: function() {
-    this.circle && this.circle.setNativeProps({
-      backgroundColor: CIRCLE_COLOR
-    });
-  },
-  // We're controlling the circle's position directly with setNativeProps.
-  _updatePosition: function() {
-    this.circle && this.circle.setNativeProps(this._circleStyles);
-  },
-  _handleStartShouldSetPanResponder: function(e: Object, gestureState: Object): boolean {
-    // Should we become active when the user presses down on the circle? 
-    return true;
-  },
-  _handleMoveShouldSetPanResponder: function(e: Object, gestureState: Object): boolean {
-    // Should we become active when the user moves a touch over the circle?
-    return true; 
-  },
-  _handlePanResponderGrant: function(e: Object, gestureState: Object) { 
-    this._highlight();
-  },
-  _handlePanResponderMove: function(e: Object, gestureState: Object) { 
-    this.setState({
-          stateID: gestureState.stateID,
-          moveX: gestureState.moveX,
-          moveY: gestureState.moveY,
-          x0: gestureState.x0,
-          y0: gestureState.y0,
-          dx: gestureState.dx,
-          dy: gestureState.dy,
-          vx: gestureState.vx,
-          vy: gestureState.vy,
-          numberActiveTouches: gestureState.numberActiveTouches
-    });
-    // Calculate current position using deltas
-    this._circleStyles.left = this._previousLeft + gestureState.dx; 
-    this._circleStyles.top = this._previousTop + gestureState.dy; 
-    this._updatePosition();
-  },
-  _handlePanResponderEnd: function(e: Object, gestureState: Object) {
-    this._unHighlight(); 
-    this._previousLeft += gestureState.dx; 
-    this._previousTop += gestureState.dy;
-  }, 
-});
-..
-...
 ```
