@@ -6,4 +6,5 @@ It's worth noting that we're not chasing **“write once, run anywhere.”** Dif
 
 [React Native: Bringing modern web techniques to mobile](https://code.facebook.com/posts/1014532261909640/react-native-bringing-modern-web-techniques-to-mobile/)
 
-![](QQ20160630-3.png)
+![](QQ20160630-4.png)
+
