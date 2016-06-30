@@ -7,7 +7,7 @@
    * [1.3 Debug tools](13_debug_tools.md)
    * [1.4 DOCs & APIs](14_docs_&_apis.md)
    * [1.5 Resources](15_resources.md)
-* 2 Components
+* [2 Components](2_components.md)
    * [2.1 Render & JSX](21_render_&_jsx.md)
    * [2.2 Lifecyle](23_lifecyle.md)
    * [2.3 States & Props](23_states_&_props.md)
