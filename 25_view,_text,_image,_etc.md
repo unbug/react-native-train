@@ -7,7 +7,7 @@
 class Header extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View>
         <Image
           resizeMode={Image.resizeMode.cover}
           source={require('./img/bg.png')}>
