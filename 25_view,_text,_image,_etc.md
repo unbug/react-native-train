@@ -9,17 +9,16 @@ class Header extends Component {
     return (
       <View style={styles.container}>
         <Image
-          style={styles.bg}
           resizeMode={Image.resizeMode.cover}
           source={require('./img/bg.png')}>
           <Image source={require('../../statics/img/dejaicon.png')}/>
-          <Text style={[styles.text, styles.name]}>
+          <Text>
             DEJA
           </Text>
-          <Text style={[styles.text, styles.title]}>
+          <Text>
             Find Clothes
           </Text>
-          <Text style={[styles.text, styles.subTitle]}>
+          <Text>
             Take a photo of an item and find it!
           </Text>
         </Image>
