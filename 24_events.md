@@ -1,4 +1,4 @@
-# 2.4 Events
+# 2.5 Events
 
 1.[`<TouchableHighlight/>`](https://facebook.github.io/react-native/docs/touchablehighlight.html)
 
