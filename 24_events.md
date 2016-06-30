@@ -46,11 +46,11 @@ class Test extends Component {
     return true;
   }
   //The View is now responding for touch events. This is the time to highlight and show the user what is happening
-  onResponderGrant(evt){
+  handleResponderGrant(evt){
     console.log('you are touching me');
   }
   //Something else is the responder right now and will not release it
-  onResponderReject(evt){
+  handleResponderReject(evt){
     console.log('please wait in line');
   }
   render() {
@@ -58,8 +58,8 @@ class Test extends Component {
       <View 
         onStartShouldSetResponder={this.handleStartShouldSetResponder}
         onMoveShouldSetResponder={this.handleMoveShouldSetResponder}
-        onResponderGrant={this.handlePressIn} 
-        onResponderReject={this.handlePressOut}>
+        onResponderGrant={this.handleResponderGrant} 
+        onResponderReject={this.handleResponderReject}>
           <View>
             <Text>Press me!</Text>
           </View>
