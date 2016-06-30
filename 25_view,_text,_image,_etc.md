@@ -4,33 +4,27 @@
 
 
 ```
-..
-...
-render() {
-  return (
-    <View>
-      <Text>This is a list!</Text>
-      <ListView>
-        <View>
-          <Text>This is a text!</Text>
-          <Image source={require('./img/check.png')} />
-        </View>
-        <View>
-          <Text>This is a text!</Text>
-          <Image source={require('./img/check.png')} />
-        </View>
-        <View>
-          <Text>This is a text!</Text>
-          <Image source={require('./img/check.png')} />
-        </View>
-        <View>
-          <Text>This is a text!</Text>
-          <Image source={require('./img/check.png')} />
-        </View>
-      </ListView>
-    </View>
-  );
+class Header extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Image
+          style={styles.bg}
+          resizeMode={Image.resizeMode.cover}
+          source={require('./img/bg.png')}>
+          <Image source={require('../../statics/img/dejaicon.png')}/>
+          <Text style={[styles.text, styles.name]}>
+            DEJA
+          </Text>
+          <Text style={[styles.text, styles.title]}>
+            Find Clothes
+          </Text>
+          <Text style={[styles.text, styles.subTitle]}>
+            Take a photo of an item and find it!
+          </Text>
+        </Image>
+      </View>
+    );
+  }
 }
-..
-...
 ```
