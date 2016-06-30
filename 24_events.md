@@ -71,15 +71,19 @@ class Test extends Component {
   /* event handles */
   //touch move
   handleResponderMove(evt){
-    console.log('X='+evt.pageX, 'Y='+evt.pageY);
+    console.log('touch move at:', 'X='+evt.pageX, 'Y='+evt.pageY);
   }
-  //touch end
+  //touch end/up
   handleResponderRelease(evt){
+    console.log('touch end');
   }
-  //
+  //Something else wants to become responder. Should this view release the responder?
   handleResponderTerminationRequest(evt){
+    return true;
   }
+  //touch cancel
   handleResponderTerminate(evt){
+    console.log('touch canceled');
   }
   render() {
     return (
@@ -100,4 +104,14 @@ class Test extends Component {
   }
 }
 ```
-3.
+
+evt is a synthetic touch event with the following form nativeEvent:
+ - changedTouches - Array of all touch events that have changed since the last event
+ - identifier - The ID of the touch
+ - locationX - The X position of the touch, relative to the element
+ - locationY - The Y position of the touch, relative to the element
+ - pageX - The X position of the touch, relative to the root element
+ - pageY - The Y position of the touch, relative to the root element
+ - target - The node id of the element receiving the touch event
+ - timestamp - A time identifier for the touch, useful for velocity calculation
+ - touches - Array of all current touches on the screen
