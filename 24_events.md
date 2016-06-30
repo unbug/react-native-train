@@ -37,15 +37,26 @@ class Test extends Component {
 ![](QQ20160630-2.png)
 ```
 class Test extends Component {
+  //the responder system bubbles up from the deepest component, 
+  //a parent View wants to prevent the child from becoming responder on a touch start
+  handleStartShouldSetResponderCapture(evt){
+    return true;
+  }
+  //the responder system bubbles up from the deepest component, 
+  //a parent View wants to prevent the child from becoming responder on a touch move
+  handleMoveShouldSetResponderCapture(evt){
+    return true;
+  }
   //Does this view want to become responder on the start of a touch?
   handleStartShouldSetResponder(evt){
     return true;
   }
-  //Called for every touch move on the View when it is not the responder: does this view want to "claim" touch responsiveness?
+  //Called for every touch move on the View when it is not the responder: 
+  //does this view want to "claim" touch responsiveness?
   handleMoveShouldSetResponder(evt){
     return true;
   }
-  //The View is now responding for touch events. This is the time to highlight and show the user what is happening
+  //The View is now responding for touch events. 
   handleResponderGrant(evt){
     console.log('you are touching me');
   }
@@ -56,6 +67,8 @@ class Test extends Component {
   render() {
     return (
       <View 
+        onStartShouldSetResponderCapture={this.handleStartShouldSetResponderCapture}
+        onMoveShouldSetResponderCapture={this.handleMoveShouldSetResponderCapture}
         onStartShouldSetResponder={this.handleStartShouldSetResponder}
         onMoveShouldSetResponder={this.handleMoveShouldSetResponder}
         onResponderGrant={this.handleResponderGrant} 
