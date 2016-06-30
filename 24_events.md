@@ -120,47 +120,35 @@ class Test extends Component {
 
 3.[PanResponder](https://facebook.github.io/react-native/docs/panresponder.html)
 
+3.1
 ```
-componentWillMount: function() {
-    this._panResponder = PanResponder.create({
-      // Ask to be the responder:
-      onStartShouldSetPanResponder: (evt, gestureState) => true,
-      onStartShouldSetPanResponderCapture: (evt, gestureState) => true,
-      onMoveShouldSetPanResponder: (evt, gestureState) => true,
-      onMoveShouldSetPanResponderCapture: (evt, gestureState) => true,
-
-      onPanResponderGrant: (evt, gestureState) => {
-        // The guesture has started. Show visual feedback so the user knows
-        // what is happening!
-
-        // gestureState.{x,y}0 will be set to zero now
-      },
-      onPanResponderMove: (evt, gestureState) => {
-        // The most recent move distance is gestureState.move{X,Y}
-
-        // The accumulated gesture distance since becoming responder is
-        // gestureState.d{x,y}
-      },
-      onPanResponderTerminationRequest: (evt, gestureState) => true,
-      onPanResponderRelease: (evt, gestureState) => {
-        // The user has released all touches while this view is the
-        // responder. This typically means a gesture has succeeded
-      },
-      onPanResponderTerminate: (evt, gestureState) => {
-        // Another component has become the responder, so this gesture
-        // should be cancelled
-      },
-      onShouldBlockNativeResponder: (evt, gestureState) => {
-        // Returns whether this component should block native components from becoming the JS
-        // responder. Returns true by default. Is currently only supported on android.
-        return true;
-      },
-    });
-  },
-
-  render: function() {
-    return (
-      <View {...this._panResponder.panHandlers} />
-    );
-  },
+this._panResponder = PanResponder.create({
+  // Ask to be the responder:
+  onStartShouldSetPanResponder: (evt, gestureState) => true,
+  onStartShouldSetPanResponderCapture: (evt, gestureState) => true,
+  onMoveShouldSetPanResponder: (evt, gestureState) => true,
+  onMoveShouldSetPanResponderCapture: (evt, gestureState) => true,
+  onPanResponderGrant: (evt, gestureState) => {},
+  onPanResponderMove: (evt, gestureState) => {},
+  onPanResponderTerminationRequest: (evt, gestureState) => true,
+  onPanResponderRelease: (evt, gestureState) => {},
+  onPanResponderTerminate: (evt, gestureState) => {},
+  onShouldBlockNativeResponder: (evt, gestureState) => {},
+});
 ```
+
+3.2 A gestureState object has the following:
+
+ - stateID - ID of the gestureState- persisted as long as there at least one touch on screen
+ - moveX - the latest screen coordinates of the recently-moved touch
+ - moveY - the latest screen coordinates of the recently-moved touch
+ - x0 - the screen coordinates of the responder grant
+ - y0 - the screen coordinates of the responder grant
+ - dx - accumulated distance of the gesture since the touch started
+ - dy - accumulated distance of the gesture since the touch started
+ - vx - current velocity of the gesture
+ - vy - current velocity of the gesture
+ - numberActiveTouches - Number of touches currently on screen
+
+
+[PanResponder example in UIExplorer](PanResponder example in UIExplorer)
