@@ -128,12 +128,16 @@ this._panResponder = PanResponder.create({
   onStartShouldSetPanResponderCapture: (evt, gestureState) => true,
   onMoveShouldSetPanResponder: (evt, gestureState) => true,
   onMoveShouldSetPanResponderCapture: (evt, gestureState) => true,
+  //touch start
   onPanResponderGrant: (evt, gestureState) => {},
+  //touch move
   onPanResponderMove: (evt, gestureState) => {},
   onPanResponderTerminationRequest: (evt, gestureState) => true,
+  //touch end/up
   onPanResponderRelease: (evt, gestureState) => {},
+  //touch cancel
   onPanResponderTerminate: (evt, gestureState) => {},
-  onShouldBlockNativeResponder: (evt, gestureState) => {},
+  onShouldBlockNativeResponder: (evt, gestureState) => true,
 });
 ```
 
