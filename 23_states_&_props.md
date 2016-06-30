@@ -1,2 +1,2 @@
-# 2.3 States & Props
+# 2.4 Props & States
 
