@@ -9,10 +9,10 @@
    * [1.5 Resources](15_resources.md)
 * [2 Components](2_components.md)
    * [2.1 Render & JSX](21_render_&_jsx.md)
+   * [2.5 View, Text, Image, etc](25_view,_text,_image,_etc.md)
    * [2.2 Lifecyle](23_lifecyle.md)
    * [2.3 States & Props](23_states_&_props.md)
    * [2.4 Events](24_events.md)
-   * [2.5 View, Text, Image, etc](25_view,_text,_image,_etc.md)
    * [2.6 Resources](26_resources.md)
 * 3 Styles
    * 3.1 Flexbox
