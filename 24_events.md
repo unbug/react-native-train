@@ -37,6 +37,7 @@ class Test extends Component {
 ![](QQ20160630-2.png)
 ```
 class Test extends Component {
+  /* Capture handles */
   //the responder system bubbles up from the deepest component, 
   //a parent View wants to prevent the child from becoming responder on a touch start
   handleStartShouldSetResponderCapture(evt){
@@ -47,6 +48,8 @@ class Test extends Component {
   handleMoveShouldSetResponderCapture(evt){
     return true;
   }
+  
+  /* Lifecycle handles */
   //Does this view want to become responder on the start of a touch?
   handleStartShouldSetResponder(evt){
     return true;
@@ -64,6 +67,20 @@ class Test extends Component {
   handleResponderReject(evt){
     console.log('please wait in line');
   }
+  
+  /* event handles */
+  //touch move
+  handleResponderMove(evt){
+    console.log('X='+evt.pageX, 'Y='+evt.pageY);
+  }
+  //touch end
+  handleResponderRelease(evt){
+  }
+  //
+  handleResponderTerminationRequest(evt){
+  }
+  handleResponderTerminate(evt){
+  }
   render() {
     return (
       <View 
@@ -72,7 +89,11 @@ class Test extends Component {
         onStartShouldSetResponder={this.handleStartShouldSetResponder}
         onMoveShouldSetResponder={this.handleMoveShouldSetResponder}
         onResponderGrant={this.handleResponderGrant} 
-        onResponderReject={this.handleResponderReject}>
+        onResponderReject={this.handleResponderReject}
+        onResponderMove={this.handleResponderMove}
+        onResponderRelease={this.handleResponderRelease}
+        onResponderTerminationRequest={this.handleResponderTerminationRequest}
+        onResponderTerminate={this.handleResponderTerminate}>
           <View>
             <Text>Press me!</Text>
           </View>
@@ -81,4 +102,4 @@ class Test extends Component {
   }
 }
 ```
-
+3.
