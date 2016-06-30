@@ -32,11 +32,11 @@ class Test extends Component {
 }
 ```
 
-2.[GestureResponder System Lifecycle](https://facebook.github.io/react-native/docs/gesture-responder-system.html#responder-lifecycle)
+2.[Gesture Responder System](https://facebook.github.io/react-native/docs/gesture-responder-system.html#responder-lifecycle)
 
-  2.1
+  2.1 Lifecycle
 ![](QQ20160630-2.png)
- 2.2
+ 2.2 example
 ```
 class Test extends Component {
   /* Capture handles */
@@ -118,3 +118,4 @@ class Test extends Component {
  - timestamp - A time identifier for the touch, useful for velocity calculation
  - touches - Array of all current touches on the screen
 
+3.
