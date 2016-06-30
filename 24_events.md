@@ -151,4 +151,4 @@ this._panResponder = PanResponder.create({
  - numberActiveTouches - Number of touches currently on screen
 
 
-[PanResponder example in UIExplorer](PanResponder example in UIExplorer)
+3.3 [PanResponder example in UIExplorer](PanResponder example in UIExplorer)
