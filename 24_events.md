@@ -34,7 +34,9 @@ class Test extends Component {
 
 2.[GestureResponder System Lifecycle](https://facebook.github.io/react-native/docs/gesture-responder-system.html#responder-lifecycle)
 
+  2.1
 ![](QQ20160630-2.png)
+ 2.2
 ```
 class Test extends Component {
   /* Capture handles */
@@ -105,7 +107,7 @@ class Test extends Component {
 }
 ```
 
-evt is a synthetic touch event with the following form nativeEvent:
+2.3 evt is a synthetic touch event with the following form nativeEvent:
  - changedTouches - Array of all touch events that have changed since the last event
  - identifier - The ID of the touch
  - locationX - The X position of the touch, relative to the element
@@ -115,3 +117,4 @@ evt is a synthetic touch event with the following form nativeEvent:
  - target - The node id of the element receiving the touch event
  - timestamp - A time identifier for the touch, useful for velocity calculation
  - touches - Array of all current touches on the screen
+
