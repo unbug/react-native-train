@@ -230,7 +230,8 @@ var PanResponderExample = React.createClass({
   },
   _handlePanResponderEnd: function(e: Object, gestureState: Object) {
     this._unHighlight(); 
-    this._previousLeft += gestureState.dx; this._previousTop += gestureState.dy;
+    this._previousLeft += gestureState.dx; 
+    this._previousTop += gestureState.dy;
   }, 
 });
 ..
