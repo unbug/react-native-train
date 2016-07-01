@@ -40,8 +40,10 @@ class Main extends Component {
 
 ```
 class Timer extends Component {
- //
-  state = {count: 0}
+  constructor(props) {
+    super(props);
+    this.state = {count: 0};
+  }
   componentDidMount(){
     this.setInterval(this.increase, 1000);
   }
