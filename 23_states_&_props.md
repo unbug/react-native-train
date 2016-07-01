@@ -9,6 +9,7 @@ class User extends Component {
     return(
       <View>
         <Text>
+          score: {this.props.score}
           type: {this.props.type}
           Name: {user.name}
           Age: {user.age}
@@ -17,6 +18,8 @@ class User extends Component {
     );
   }
 }
+User.propTypes = { score: React.PropTypes.number };
+User.defaultProps = { score: 0 };
 
 var user = {name: 'foo', age: 21};
 
