@@ -10,6 +10,7 @@
 3.log
 ```
 console.log('some text');
+console.dir({a:1, b:2, c:3});
 debugger;//breaking point
 ```
 4.[Atom](https://atom.io/) & [nuclide](https://nuclide.io/)
