@@ -19,6 +19,7 @@
    * 3.2 Absolute & Relative
    * 3.3 Size & Dimensions & onLayout
    * 3.4 Inheritance
+   * 3.5 Resources
 * 4 Architecture
    * 4.1 Redux+React
    * 4.2 Containers & Components
