@@ -14,7 +14,7 @@
    * [2.4 Props & States](23_states_&_props.md)
    * [2.5 Events](24_events.md)
    * [2.6 Resources](26_resources.md)
-* 3 Styles
+* [3 Styles](3_styles.md)
    * 3.1 Flexbox
    * 3.2 Absolute & Relative
    * 3.3 Size & Dimensions & onLayout
