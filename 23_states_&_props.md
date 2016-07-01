@@ -37,3 +37,37 @@ class Main extends Component {
 }
 ```
 2.state: State differs from props in that it is internal to the component.
+
+```
+class Timer extends Component {
+  state = {count: 0}
+  
+  increase(){
+    this.setState({conut: this.state.count+1});
+  }
+  render(){
+    return(
+      <View>
+        <Text>count: {this.state.count}</Text>
+      </View>
+    );
+  }
+}
+//dufaultProps
+User.propTypes = { score: React.PropTypes.number };
+User.defaultProps = { score: 0 };
+
+var user = {name: 'foo', age: 21};
+class Main extends Component {
+  handleReady(str){
+    console.log(str);
+  }
+  render(){
+    return(
+      <View>
+        <User type="Dev" data={user} onReady={this.handleReady}/>
+      </View>
+    );
+  }
+}
+```
