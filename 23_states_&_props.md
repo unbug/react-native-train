@@ -89,3 +89,14 @@ Can change in child Components? | Yes | No
  - Use props to for event handlers to communicate with child components.
  - Use state for storing simple view state like wether or not drop-down options are visible.
  - Never modify this.state directly, use this.setstate instead.
+
+5.Stateless Component
+```
+const Heading = ({title}) => <Text>{title}</Text>;
+
+..
+...
+<Heading title="test title"/>
+...
+..
+```
