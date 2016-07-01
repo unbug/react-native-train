@@ -15,7 +15,7 @@
    * [2.5 Events](24_events.md)
    * [2.6 Resources](26_resources.md)
 * [3 Styles](3_styles.md)
-   * 3.1 Flexbox
+   * [3.1 Flexbox](31_flexbox.md)
    * 3.2 Absolute & Relative
    * 3.3 Size & Dimensions & onLayout
    * 3.4 Inheritance
