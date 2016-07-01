@@ -40,8 +40,11 @@ class Main extends Component {
 
 ```
 class Timer extends Component {
+ //
   state = {count: 0}
-  
+  componentDidMount(){
+    this.setInterval(this.increase, 1000);
+  }
   increase(){
     this.setState({conut: this.state.count+1});
   }
@@ -53,19 +56,12 @@ class Timer extends Component {
     );
   }
 }
-//dufaultProps
-User.propTypes = { score: React.PropTypes.number };
-User.defaultProps = { score: 0 };
 
-var user = {name: 'foo', age: 21};
 class Main extends Component {
-  handleReady(str){
-    console.log(str);
-  }
   render(){
     return(
       <View>
-        <User type="Dev" data={user} onReady={this.handleReady}/>
+        <Timer/>
       </View>
     );
   }
