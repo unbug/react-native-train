@@ -12,7 +12,6 @@ class User extends Component {
           Name: {user.name}
           Age: {user.age}
         </Text>
-        
       </View>
     );
   }
