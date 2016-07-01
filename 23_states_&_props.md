@@ -70,7 +70,7 @@ class Main extends Component {
 }
 ```
 
-3.Changing _props_ and _state_
+3.[Changing _props_ and _state_](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md#changing-props-and-state)
 
 - | _props_ | _state_ | 
 --- | --- | --- 
