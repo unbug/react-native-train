@@ -18,11 +18,11 @@ class User extends Component {
     );
   }
 }
+//dufaultProps
 User.propTypes = { score: React.PropTypes.number };
 User.defaultProps = { score: 0 };
 
 var user = {name: 'foo', age: 21};
-
 class Main extends Component {
   handleReady(str){
     console.log(str);
