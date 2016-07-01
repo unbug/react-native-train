@@ -5,6 +5,7 @@
 class User extends Component {
   render(){
     const user = this.props.data;
+    this.props.onReady('I am ready!');
     return(
       <View>
         <Text>
@@ -18,9 +19,17 @@ class User extends Component {
 }
 
 var user = {name: 'foo', age: 21};
-..
-...
-  <User type="Dev" data={user}/>
-..
-...
+
+class Main extends Component {
+  handleReady(str){
+    console.log(str);
+  }
+  render(){
+    return(
+      <View>
+        <User type="Dev" data={user} onReady={this.handleReady}/>
+      </View>
+    );
+  }
+}
 ```
