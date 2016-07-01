@@ -35,6 +35,7 @@
    * 5.4 map, array, string, spread operator, destructuring assignment
    * 5.5 this, bind, =>
    * 5.6 Promise
+   * 5.7 Resources
 * 6 Data
    * 6.1 Fetch
    * 6.2 Persistent Data
