@@ -21,7 +21,7 @@
    * 3.4 Inheritance
    * [3.5 Resources](35_resources.md)
 * 4 Architecture
-   * 4.1 Redux+React
+   * [4.1 Redux+React](41_redux+react.md)
    * 4.2 Containers & Components
    * 4.3 Actions & Reducers
    * 4.4 Statics, Constants, etc
