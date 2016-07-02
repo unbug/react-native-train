@@ -90,6 +90,8 @@ Can change in child Components? | Yes | No
  - Use state for storing simple view state like wether or not drop-down options are visible.
  - Never modify this.state directly, use this.setstate instead.
 
+![](QQ20160702-0.png)
+
 5.Stateless Component
 ```
 const Heading = ({title}) => <Text>{title}</Text>;
