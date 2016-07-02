@@ -91,6 +91,7 @@ Can change in child Components? | Yes | No
  - Never modify this.state directly, use this.setstate instead.
 
 
+
 5.Stateless Component
 ```
 const Heading = ({title}) => <Text>{title}</Text>;
