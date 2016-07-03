@@ -42,3 +42,6 @@ As react-native Android use many open source projects, if you use some of them a
 
 - Add proguard rules,
 ![](integration_android_step4.png)
+
+- AndroidManifest.xml, you can remove the permission if you don't need debug mode.
+![](integration_android_step5.png)
