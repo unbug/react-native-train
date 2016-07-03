@@ -19,7 +19,7 @@ But the demo works corrcetly, so I decided to copy the build settings of it. And
 - Modify the app gradle file,
 ![](integration_android_step22.png)
 
-    *1. Official demo use this variable to control wheather building different app of cpu, that will reduce the size of each app, I just ignore it here.
+    *1. Official demo use this variable to control wheather building different apps for cpus, that will reduce the size of each app, I just ignore it here.
 
     *2. The version support package matters..
 As react-native Android use many open source projects, if you use some of them already, you should check the version or exclude the from dependencies.  [The list currently](https://github.com/facebook/react-native/blob/master/ReactAndroid/build.gradle) 
