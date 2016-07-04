@@ -13,7 +13,7 @@ import {
   Image
 } from 'react-native';
 
-class Header extends Component {
+class Main extends Component {
   render() {
     return (
       <View>
