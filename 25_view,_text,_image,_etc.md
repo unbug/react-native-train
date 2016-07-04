@@ -12,6 +12,7 @@ import {
   View,
   Image
 } from 'react-native';
+
 class Header extends Component {
   render() {
     return (
