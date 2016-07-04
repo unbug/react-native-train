@@ -1,8 +1,7 @@
 # 2 Components
-1.Define component
+1.MyComponent.js
 
 ```
-//MyComponent.js
 class MyComponent extends React.Component {
   render() {
     return <Text>My component!</Text>;
