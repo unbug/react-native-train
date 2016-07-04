@@ -53,8 +53,8 @@
 * [8 Integration](8_integration.md)
    * [8.1 iOS](81_ios.md)
    * [8.2 Android](82_android.md)
-   * [8.4 Resources](83_resources.md)
    * 8.3 Before publishing
+   * [8.4 Resources](83_resources.md)
 * 9 Hot Update
    * 9.1 iOS
    * 9.2 Android
