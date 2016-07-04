@@ -16,7 +16,7 @@ export default MyComponent;
 
 ```
 import MyComponent from './MyComponent';
-class MyComponent extends React.Component {
+class Main extends React.Component {
   render() {
     return <MyComponent>;
   }
