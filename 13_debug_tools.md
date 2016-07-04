@@ -25,6 +25,7 @@ debugger;//breaking point
 ![](QQ20160623-4.png)
 
 6.[Real device](https://facebook.github.io/react-native/docs/debugging.html#chrome-developer-tools)
+
 6.1 Deploy to real device
 `project_name/ios/project_name/AppDelegate.m`
 
