@@ -25,6 +25,7 @@ debugger;//breaking point
 ![](QQ20160623-4.png)
 
 6.[Real device](https://facebook.github.io/react-native/docs/debugging.html#chrome-developer-tools)
+6.1 Deploy to real device
 `project_name/ios/project_name/AppDelegate.m`
 
 ```
@@ -40,4 +41,16 @@ debugger;//breaking point
    */
 
    jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+```
+6.2 Debug in real device
+
+`node_modules/react-native/blob/master/Libraries/WebSocket/RCTWebSocketExecutor.m`
+```
+  if (!_url) {
+    NSUserDefaults *standardDefaults = [NSUserDefaults standardUserDefaults];
+    NSInteger port = [standardDefaults integerForKey:@"websocket-executor-port"] ?: 8081;
+    //NSString *URLString = [NSString stringWithFormat:@"http://172.28.0.230:%zd/debugger-proxy?role=client", port];
+    NSString *URLString = [NSString stringWithFormat:@"http://localhost:%zd/debugger-proxy?role=client", port];
+    _url = [RCTConvert NSURL:URLString];
+  }
 ```
