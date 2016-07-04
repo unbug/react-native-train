@@ -12,7 +12,7 @@ class MyComponent extends React.Component {
 export default MyComponent;
 ```
 
-2.User component
+2.Main.js
 
 ```
 import MyComponent from './MyComponent';
