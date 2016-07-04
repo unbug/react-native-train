@@ -30,3 +30,10 @@ class Main extends Component {
 }
 ```
 
+3.Properties
+ - [View Properties](https://facebook.github.io/react-native/docs/view.html#style)
+ - [Image Properties](https://facebook.github.io/react-native/docs/image.html#style)
+ - [Text Properties](https://facebook.github.io/react-native/docs/text.html#style)
+ - [Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
+ - [Transform Properties](https://facebook.github.io/react-native/docs/transforms.html#content)
+
