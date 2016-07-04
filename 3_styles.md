@@ -5,18 +5,28 @@
 ```
 const styles = StyleSheet.create({
   container: {
-    fontSize: 14,
-  },
-  red: {
-    backgroundColor: 'red',
-  },
-  blue: {
+    flex: 1,
     backgroundColor: 'blue',
-    
+  },
+  text: {
+    fontSize: 14,
+    color: 'red'
   }
 });
 
 ```
 
 2.Using Styles
+
+```
+class Main extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.text}>I am red.</Text>
+      </View>
+    );
+  }
+}
+```
 
