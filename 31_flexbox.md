@@ -63,7 +63,62 @@ const styles = StyleSheet.create({
 ![](QQ20160705-16.png)
 
 ```
+class Main extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.header}>
+          <Text style={styles.text}>200X100</Text>
+        </View>
+        <View style={styles.main}>
+          <View  style={styles.mainContent}>
+            <Text style={styles.text}>100X100</Text>
+          </View>
+        </View>
+        <View style={styles.footer}>
+          <Text style={styles.text}>200X100</Text>
+        </View>
+      </View>
+    );
+  }
+}
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  header: {
+    height: 100,
+    width: 200,
+    backgroundColor: 'red'
+  },
+  main: {
+    height: 200,
+    width: 200,
+    padding: 25,
+    borderWidth: 25,
+    borderColor: 'black',
+    margin: 25,
+    backgroundColor: 'blue'
+  },
+  mainContent: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'red'
+  },
+  footer: {
+    height: 100,
+    width: 200,
+    backgroundColor: 'green'
+  },
+  text: {
+    color: '#ffffff',
+    fontSize: 20
+  }
+});
 ```
 
 ![](QQ20160705-17.png)
