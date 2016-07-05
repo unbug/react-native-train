@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
 
 6.alignSelf:'auto'|'flex-start'|'flex-end'|'center'|'stretch'
 
+![](QQ20160705-13.png)
 
 
 [Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
