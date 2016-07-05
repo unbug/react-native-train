@@ -20,8 +20,16 @@
     backgroundColor: 'red'
   },
   main: {
-    flex: 2,
+    flex: 3,
     backgroundColor: 'blue'
+  },
+  footer: {
+  	flex: 1,
+    backgroundColor: 'green'
+  },
+  text: {
+  	color: '#ffffff',
+    fontSize: 80
   }
 });
  ```
