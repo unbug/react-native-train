@@ -5,6 +5,7 @@
   >The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow.
 
 
+![](QQ20160705-15.png)
 
 
 2.flex:1
