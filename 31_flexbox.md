@@ -41,7 +41,8 @@ const styles = StyleSheet.create({
 
 4.justifyContent:'flex-start'|'flex-end'|'center'|'space-between'|'space-around';
 
-alignItems:'flex-start'|'flex-end'|'center'|'stretch'
+5.alignItems:'flex-start'|'flex-end'|'center'|'stretch'
+
 
 
 [Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
