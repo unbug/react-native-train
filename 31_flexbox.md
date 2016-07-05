@@ -9,7 +9,7 @@
  
  2.1 Flex
 
-![](QQ20160705-1.png)
+![](QQ20160705-2.png)
 
  ```
  const styles = StyleSheet.create({
