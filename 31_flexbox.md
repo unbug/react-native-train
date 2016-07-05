@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
 
 5.alignItems:'flex-start'|'flex-end'|'center'|'stretch'
 
-
+![](QQ20160705-12.png)
 
 6.alignSelf:'auto'|'flex-start'|'flex-end'|'center'|'stretch'
 
