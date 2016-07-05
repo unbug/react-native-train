@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   }
 });
  ```
-
+3.
 
 
 [Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
