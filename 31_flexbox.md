@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   }
 });
  ```
-3.flexDirection:'row'|'column' , [Understanding Flex Direction](http://www.standardista.com/understanding-flex-direction/)
+3.flexDirection:'row'|'column'
 
 ![](QQ20160705-7.png)
 
@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
 6.alignSelf:'auto'|'flex-start'|'flex-end'|'center'|'stretch'
 
 ![](QQ20160705-13.png)
+
 
 
 [Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
