@@ -185,4 +185,4 @@ this._panResponder = PanResponder.create({
  - numberActiveTouches - Number of touches currently on screen
 
 
-3.3 [PanResponder example in UIExplorer](PanResponder example in UIExplorer)
+3.3 [PanResponder example in UIExplorer](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/PanResponderExample.js)
