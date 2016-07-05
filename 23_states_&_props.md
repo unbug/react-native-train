@@ -39,19 +39,27 @@ class Main extends Component {
 2.state: State differs from props in that it is internal to the component.
 
 ```
+
+
 class Timer extends Component {
   constructor(props) {
     super(props);
     this.state = {count: 0};
   }
-  componentDidMount(){
-    this.setInterval(this.increase, 1000);
+
+  componentDidMount() {
+    let that = this;
+    setInterval(function () {
+      that.increase();
+    }, 1000);
   }
-  increase(){
-    this.setState({conut: this.state.count+1});
+
+  increase() {
+    this.setState({count: this.state.count + 1});
   }
-  render(){
-    return(
+
+  render() {
+    return (
       <View>
         <Text>count: {this.state.count}</Text>
       </View>
