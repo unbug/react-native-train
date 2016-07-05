@@ -49,8 +49,7 @@ class Test extends Component {
         onSubmitEditing={...}
         onBlur={...}
         onBlur={...}
-        onBlur={...}
-        >
+        onBlur={...}>
       </TextInput>
     );
   }
