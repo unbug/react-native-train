@@ -45,7 +45,7 @@
    * 7.2 Resources
 * [8 Native Modules](7_native_modules.md)
    * [8.1 iOS](71_ios.md)
-       * 7.1.1 JS call OC
+       * 8.1.1 JS call OC
        * 7.1.2 OC call JS
        * 7.1.3 Native View Component
    * [8.2 Android](72_android.md)
