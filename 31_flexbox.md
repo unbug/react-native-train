@@ -34,8 +34,10 @@ const styles = StyleSheet.create({
  ```
 3.flexDirection: 'row'|'column', [Understanding Flex Direction](http://www.standardista.com/understanding-flex-direction/)
 
-![](QQ20160705-5.png)
-![](QQ20160705-6.png)
+![](QQ20160705-7.png)
+
+![](QQ20160705-8.png)
+
 
 
 
