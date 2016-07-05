@@ -5,29 +5,21 @@
 1.1.[`<TouchableHighlight/>`](https://facebook.github.io/react-native/docs/touchablehighlight.html)
 
 ```
-class Test extends Component {
+class Touch extends Component {
   handlePress(){
     console.log('press');
   }
   handleLongPress(){
     console.log('longPress');
   }
-  handlePressIn(){
-    console.log('pressIn');
-  }
-  handlePressOut(){
-    console.log('pressIn');
-  }
   render() {
     return (
-      <TouchableHighlight 
+      <TouchableHighlight
         onPress={this.handlePress}
-        onLongPress={this.handleLongPress}
-        onPressIn={this.handlePressIn} 
-        onPressOut={this.handlePressOut}>
-          <View>
-            <Text>Press me!</Text>
-          </View>
+        onLongPress={this.handleLongPress}>
+        <View>
+          <Text>Press me!</Text>
+        </View>
       </TouchableHighlight>
     );
   }
