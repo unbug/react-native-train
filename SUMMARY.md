@@ -48,7 +48,7 @@
        * 7.1.1 JS call OC
        * 7.1.2 OC call JS
        * 7.1.3 Native View Component
-   * [7.2 Android](72_android.md)
+   * [8.2 Android](72_android.md)
        * 7.2.1 JS call Java
        * 7.2.2 Java call JS
        * 7.2.3 Native View Component
