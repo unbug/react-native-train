@@ -8,7 +8,17 @@
 2.[Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
  2.1 Flex
  ```
- 
+ const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  header: {
+    flex: 1
+  },
+  main: {
+    flex: 2
+  }
+});
  ```
 [Understanding Flex Direction](http://www.standardista.com/understanding-flex-direction/)
 
