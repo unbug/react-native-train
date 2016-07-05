@@ -17,18 +17,10 @@ class Main extends Component {
   render() {
     return (
       <View>
-        <Image
-          resizeMode={Image.resizeMode.cover}
-          source={require('./img/bg.png')}>
-          <Image source={require('../../statics/img/dejaicon.png')}/>
+        <Image source={require('./img/bg.png')}>
+          <Image source={require('./img/icon.png')}/>
           <Text>
-            DEJA
-          </Text>
-          <Text>
-            Find Clothes
-          </Text>
-          <Text>
-            Take a photo of an item and find it!
+            some text!
           </Text>
         </Image>
       </View>
