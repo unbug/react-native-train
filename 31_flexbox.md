@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
  ```
 3.flexDirection, [Understanding Flex Direction](http://www.standardista.com/understanding-flex-direction/)
 
-![](QQ20160705-5.png)![](QQ20160705-6.png)
+![](QQ20160705-5.png)
+![](QQ20160705-6.png)
 
 
 
