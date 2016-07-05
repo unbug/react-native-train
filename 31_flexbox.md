@@ -6,6 +6,7 @@
 
 
 2.[Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
+ 
  2.1 Flex
  ```
  const styles = StyleSheet.create({
