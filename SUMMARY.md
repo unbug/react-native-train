@@ -61,6 +61,6 @@
 * 10 Hot Update
    * 10.1 iOS
    * 10.2 Android
-   * [9.3 Resources](93_resources.md)
+   * [10.3 Resources](93_resources.md)
 * [Resources](resources.md)
 
