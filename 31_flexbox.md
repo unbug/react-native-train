@@ -8,16 +8,20 @@
 2.[Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
  
  2.1 Flex
+
+
  ```
  const styles = StyleSheet.create({
   container: {
     flex: 1
   },
   header: {
-    flex: 1
+    flex: 1,
+    backgroundColor: 'red'
   },
   main: {
-    flex: 2
+    flex: 2,
+    backgroundColor: 'blue'
   }
 });
  ```
