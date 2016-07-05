@@ -40,6 +40,7 @@
    * 6.1 Fetch
    * 6.2 Persistent Data
    * 6.3 Resources
+* 7 Animations
 * [7 Native Modules](7_native_modules.md)
    * [7.1 iOS](71_ios.md)
        * 7.1.1 JS call OC
@@ -60,5 +61,4 @@
    * 9.2 Android
    * [9.3 Resources](93_resources.md)
 * [Resources](resources.md)
-* 7 Animations
 
