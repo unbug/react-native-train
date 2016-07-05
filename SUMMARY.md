@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-   * 7 Animations
 * [1 First look](chapter1.md)
    * [1.1 Building an app in 5 minutes](11_building_an_app_in_5_minutes.md)
    * [1.2 How it works](12_how_it_works.md)
