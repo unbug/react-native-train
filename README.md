@@ -1,5 +1,6 @@
 # React Native Training
-![](344067-reactive-native.jpg)
+
+![](QQ20160705-3.png)
 
 We are working on it, the videos are [here (中文)](https://www.youtube.com/playlist?list=PLC_rYRxEnwQGLQqrHR0aho33U6DCeJamC)! Any help will be appreciated :)
 
