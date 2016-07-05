@@ -42,7 +42,7 @@
    * 6.3 Resources
 * 7 Animations
    * 7.1 Navigator Scene Transitions
-   * 7.2 Resources
+   * [7.2 Resources](72_resources.md)
 * [8 Native Modules](7_native_modules.md)
    * [8.1 iOS](71_ios.md)
        * 8.1.1 JS call OC
