@@ -1,8 +1,8 @@
 # 2.5 Events
 
-1Basic events
+1.Basic events
 
-1.1[`<TouchableHighlight/>`](https://facebook.github.io/react-native/docs/touchablehighlight.html)
+1.1.[`<TouchableHighlight/>`](https://facebook.github.io/react-native/docs/touchablehighlight.html)
 
 ```
 class Test extends Component {
@@ -33,7 +33,7 @@ class Test extends Component {
   }
 }
 ```
-1.2 [`<TextInput/>`](https://facebook.github.io/react-native/docs/textinput.html)
+1.2. [`<TextInput/>`](https://facebook.github.io/react-native/docs/textinput.html)
 
 ```
 class Test extends Component {
@@ -57,7 +57,7 @@ class Test extends Component {
 }
 
 ```
-1.3[DeviceEventEmitter](https://kpetrovi.ch/2015/09/30/react-native-ios-keyboard-events.html)
+1.3.[DeviceEventEmitter](https://kpetrovi.ch/2015/09/30/react-native-ios-keyboard-events.html)
 
 ```
 //keyboardWillShow, keyboardDidShow, keyboardWillHide, keyboardDidHide, keyboardWillChangeFrame, and keyboardDidChangeFrame
