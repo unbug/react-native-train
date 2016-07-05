@@ -39,6 +39,9 @@ const styles = StyleSheet.create({
 ![](QQ20160705-8.png)
 
 
+4.justifyContent:'flex-start'|'flex-end'|'center'|'space-between'|'space-around';
+
+alignItems:'flex-start'|'flex-end'|'center'|'stretch'
 
 
 [Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
