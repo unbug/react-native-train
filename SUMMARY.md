@@ -27,7 +27,7 @@
    * 4.4 Statics, Constants, etc
    * 4.5 Naming convention
    * 4.6 Deja React Native App
-   * 4.7 Resources
+   * [4.7 Resources](47_resources.md)
 * 5 ES6/7
    * 5.1 export, import
    * 5.2 let, const
