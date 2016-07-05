@@ -4,3 +4,4 @@
 - [Introduce Flux & react in practices (KKBOX)](http://www.slideshare.net/randylien/introduce-flux-react-in-kkbox)
 - [props vs state](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
 - [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
+- [JSX in Depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
