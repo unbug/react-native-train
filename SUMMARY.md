@@ -60,4 +60,5 @@
    * 9.2 Android
    * [9.3 Resources](93_resources.md)
 * [Resources](resources.md)
+* 7 Animations
 
