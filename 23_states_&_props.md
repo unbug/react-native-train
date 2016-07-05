@@ -76,20 +76,7 @@ class Main extends Component {
 }
 ```
 
-3.[Changing _props_ and _state_](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md#changing-props-and-state)
-
-- | _props_ | _state_ | 
---- | --- | --- 
-Can get initial value from parent Component? | Yes | Yes
-Can be changed by parent Component? | Yes | No
-Can set default values inside Component?* | Yes | Yes
-Can change inside Component? | No | Yes
-Can set initial value for child Components? | Yes | Yes
-Can change in child Components? | Yes | No
-
-\* Note that both _props_ and _state_ initial values received from parents override default values defined inside a Component.
-
-4._props_ VS _state_
+3._props_ VS _state_
  - Use props to pass data and settings through the component tree.
  - Never modify this.props inside of a component; consider props immutable.
  - Use props to for event handlers to communicate with child components.
@@ -98,7 +85,7 @@ Can change in child Components? | Yes | No
 
 ![](QQ20160702-0.png)
 
-5.Stateless Component
+4.Stateless Component
 ```
 const Heading = ({title}) => <Text>{title}</Text>;
 
