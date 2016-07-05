@@ -9,7 +9,7 @@
  
  2.1 Flex
 
-![](QQ20160705-0.png)
+![](QQ20160705-1.png)
 
  ```
  const styles = StyleSheet.create({
@@ -34,5 +34,6 @@
   }
 });
  ```
+ 
 [Understanding Flex Direction](http://www.standardista.com/understanding-flex-direction/)
 
