@@ -60,7 +60,8 @@ class Test extends Component {
 1.3.[DeviceEventEmitter](https://kpetrovi.ch/2015/09/30/react-native-ios-keyboard-events.html)
 
 ```
-//keyboardWillShow, keyboardDidShow, keyboardWillHide, keyboardDidHide, keyboardWillChangeFrame, and keyboardDidChangeFrame
+//keyboardWillShow, keyboardDidShow, keyboardWillHide, keyboardDidHide
+//keyboardWillChangeFrame, keyboardDidChangeFrame
 //add the listener
  var listener = DeviceEventEmitter.addListener('keyboardWillShow', (e) =>{
    console.log('Event is fired!');
