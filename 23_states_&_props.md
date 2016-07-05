@@ -39,8 +39,6 @@ class Main extends Component {
 2.state: State differs from props in that it is internal to the component.
 
 ```
-
-
 class Timer extends Component {
   constructor(props) {
     super(props);
