@@ -41,6 +41,8 @@ const styles = StyleSheet.create({
 
 4.justifyContent:'flex-start'|'flex-end'|'center'|'space-between'|'space-around';
 
+
+
 5.alignItems:'flex-start'|'flex-end'|'center'|'stretch'
 
 
