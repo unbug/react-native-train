@@ -61,6 +61,7 @@ const styles = StyleSheet.create({
 8.Box model
 
 ![](QQ20160705-16.png)
+width = borderLeftWidth(25)+paddingLeft(25)+100+
 
 ```
 class Main extends Component {
