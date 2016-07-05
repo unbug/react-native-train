@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   }
 });
  ```
-3.flexDirection[Understanding Flex Direction](http://www.standardista.com/understanding-flex-direction/)
+3.flexDirection, [Understanding Flex Direction](http://www.standardista.com/understanding-flex-direction/)
 
 
 [Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
