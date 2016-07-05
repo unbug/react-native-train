@@ -51,6 +51,8 @@ const styles = StyleSheet.create({
 
 ![](QQ20160705-13.png)
 
+7.flexWrap:'wrap'|'nowrap'
+
 
 
 [Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
