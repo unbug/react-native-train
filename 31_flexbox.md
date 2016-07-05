@@ -55,7 +55,6 @@ const styles = StyleSheet.create({
 
 ![](QQ20160705-14.png)
 
-[Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
 
 
 
