@@ -12,24 +12,24 @@
 ![](QQ20160705-2.png)
 
  ```
- const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1
   },
   header: {
-    flex: 1,
+    height: 200,
     backgroundColor: 'red'
   },
   main: {
-    flex: 3,
+    flex: 1,
     backgroundColor: 'blue'
   },
   footer: {
-  	flex: 1,
+    height: 200,
     backgroundColor: 'green'
   },
   text: {
-  	color: '#ffffff',
+    color: '#ffffff',
     fontSize: 80
   }
 });
