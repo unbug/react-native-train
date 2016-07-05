@@ -85,7 +85,7 @@ Can change in child Components? | Yes | No
 
 4._props_ VS _state_
  - Use props to pass data and settings through the component tree.
- - Never modify this.props or call this.setprops inside of a component; consider props immutable.
+ - Never modify this.props inside of a component; consider props immutable.
  - Use props to for event handlers to communicate with child components.
  - Use state for storing simple view state like wether or not drop-down options are visible.
  - Never modify this.state directly, use this.setstate instead.
