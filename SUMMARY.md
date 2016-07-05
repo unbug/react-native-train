@@ -54,7 +54,7 @@
        * 8.2.3 Native View Component
    * [8.3 Resources](73_resources.md)
 * [9 Integration](8_integration.md)
-   * [8.1 iOS](81_ios.md)
+   * [9.1 iOS](81_ios.md)
    * [8.2 Android](82_android.md)
    * [8.3 Before publishing](83_before_publishing.md)
    * [8.4 Resources](83_resources.md)
