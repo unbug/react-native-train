@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
 ![](QQ20160705-8.png)
 
 
-4.justifyContent:'flex-start'|'flex-end'|'center'|'space-between'|'space-around';
+4.justifyContent:'flex-start'|'flex-end'|'center'|'space-between'|'space-around'
 
 
 
