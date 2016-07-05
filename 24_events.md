@@ -1,6 +1,7 @@
 # 2.5 Events
 
-1.[`<TouchableHighlight/>`](https://facebook.github.io/react-native/docs/touchablehighlight.html)
+1
+1.1[`<TouchableHighlight/>`](https://facebook.github.io/react-native/docs/touchablehighlight.html)
 
 ```
 class Test extends Component {
@@ -30,6 +31,31 @@ class Test extends Component {
     );
   }
 }
+```
+1.2 [`<TextInput/>`](https://facebook.github.io/react-native/docs/textinput.html)
+
+```
+class Test extends Component {
+  //...
+  //handle events
+  //...
+  render() {
+    return (
+      <TextInput 
+        onBlur={...}
+        onChange={...}
+        onEndEditing={...}
+        onSelectionChange={...}
+        onSubmitEditing={...}
+        onBlur={...}
+        onBlur={...}
+        onBlur={...}
+        >
+      </TextInput>
+    );
+  }
+}
+
 ```
 
 2.[Gesture Responder System](https://facebook.github.io/react-native/docs/gesture-responder-system.html#responder-lifecycle)
