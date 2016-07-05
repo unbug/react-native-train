@@ -58,6 +58,11 @@ const styles = StyleSheet.create({
 
 ![](QQ20160705-14.png)
 
+8.Box model
+
+![](QQ20160705-16.png)
+
+
 
 
 
