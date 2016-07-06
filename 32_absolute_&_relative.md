@@ -60,6 +60,8 @@ const styles = StyleSheet.create({
 
 2.Relative
 
+![](QQ20160706-1.png)
+
 ```
 class Relative extends Component {
   render() {
