@@ -130,5 +130,7 @@ const styles = StyleSheet.create({
 });
 ```
 
+4.fixed
+
 
 
