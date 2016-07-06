@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
 
 2.zIndex, [v0.29](https://github.com/facebook/react-native/commit/d64368b9e239b574039f4a6508bf2aeb0806121b) or [transform](http://facebook.github.io/react-native/docs/transforms.html)
 
-
+![](QQ20160706-2.png)
 
 ```
   box2: {
