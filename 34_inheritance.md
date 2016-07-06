@@ -12,11 +12,26 @@ class InheritanceStyle extends Component {
   }
 }
 
-..
-...
-  <InheritanceStyle parentColor={styles.blue}/>
-..
-...
+class Main extends Component {
+  handleReady(str){
+    console.log(str);
+  }
+  render() {
+    return (
+      <View style={styles.container}>
+        <InheritanceStyle parentColor={styles.blue}/>
+      </View>
+    );
+  }
+}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  blue: {
+    backgroundColor: 'blue'
+  }
+});
 ```
 
 2.concatenation styles
