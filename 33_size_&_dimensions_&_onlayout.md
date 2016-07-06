@@ -3,7 +3,6 @@
 1.window size
 
 ![](QQ20160706-4.png)
-
 ```
 let winSize = Dimensions.get('window');
 console.log(winSize);
