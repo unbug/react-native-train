@@ -48,3 +48,6 @@ const BaseStyles = StyleSheet.create({
 });
 export default BaseStyles;
 ```
+```
+
+```
