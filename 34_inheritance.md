@@ -29,7 +29,8 @@ const styles = StyleSheet.create({
     flex: 1
   },
   blue: {
-    backgroundColor: 'red'
+    flex: 1,
+    backgroundColor: 'blue'
   }
 });
 ```
