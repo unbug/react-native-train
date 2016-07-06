@@ -11,6 +11,12 @@ class InheritanceStyle extends Component {
     );
   }
 }
+
+..
+...
+  <InheritanceStyle parentColor={styles.blue}/>
+..
+...
 ```
 
 2.concatenation styles
