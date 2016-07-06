@@ -57,3 +57,6 @@ const styles = StyleSheet.create({
   }
 });
 ```
+
+2.Relative
+
