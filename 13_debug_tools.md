@@ -19,6 +19,8 @@ debugger;//breaking point
 
 5.inspect
 
+Open Atom [Command Palette package](https://atom.io/packages/command-palette) with `cmd-shift-p` and search "inspector", then click "Nuclide React Native Inspector:Show"
+
 ![](QQ20160624-0.png)
 
 
