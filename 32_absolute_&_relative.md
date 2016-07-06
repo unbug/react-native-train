@@ -58,7 +58,23 @@ const styles = StyleSheet.create({
 });
 ```
 
-2.Relative
+2.zIndex, [v0.29](https://github.com/facebook/react-native/commit/d64368b9e239b574039f4a6508bf2aeb0806121b) or [transform](http://facebook.github.io/react-native/docs/transforms.html)
+
+
+
+```
+  box2: {
+    position: 'absolute',
+    top: 80,
+    left: 80,
+    width: 100,
+    height: 100,
+    backgroundColor: 'blue',
+    transform: [{'translate': [0,0, 1]}]
+  },
+```
+
+3.Relative
 
 ![](QQ20160706-1.png)
 
@@ -113,9 +129,6 @@ const styles = StyleSheet.create({
   }
 });
 ```
-3. zIndex, [v0.29](https://github.com/facebook/react-native/commit/d64368b9e239b574039f4a6508bf2aeb0806121b) or [transform](http://facebook.github.io/react-native/docs/transforms.html)
-
-
 
 
 
