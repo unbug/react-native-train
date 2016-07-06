@@ -36,3 +36,6 @@ const styles = StyleSheet.create({
 
 2.concatenation styles
 
+```
+
+```
