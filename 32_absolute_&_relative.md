@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   },
 ```
 
-3.relative
+3.relative(default)
 
 ![](QQ20160706-1.png)
 
