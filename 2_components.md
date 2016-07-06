@@ -24,3 +24,8 @@ class Main extends React.Component {
   }
 }
 ```
+3.AppRegistry
+
+```
+AppRegistry.registerComponent('MyApp', () => Main);
+```
