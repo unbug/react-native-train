@@ -113,3 +113,7 @@ const styles = StyleSheet.create({
   }
 });
 ```
+3. zIndex, [v0.29](https://github.com/facebook/react-native/commit/d64368b9e239b574039f4a6508bf2aeb0806121b)
+
+
+
