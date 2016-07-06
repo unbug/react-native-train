@@ -2,6 +2,8 @@
 
 1.window size
 
+
+
 ```
 let winSize = Dimensions.get('window');
 console.log(winSize);
