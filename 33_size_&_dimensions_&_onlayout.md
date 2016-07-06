@@ -5,6 +5,4 @@
 ```
 let winSize = Dimensions.get('window');
 console.log(winSize);
-
-
 ```
