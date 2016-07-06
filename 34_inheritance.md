@@ -49,5 +49,20 @@ const BaseStyles = StyleSheet.create({
 export default BaseStyles;
 ```
 ```
+import BaseStyles from './BaseStyles';
 
+class InheritanceStyle extends Component {
+  render() {
+    return (
+      <View style={this.props.parentColor}>
+        <Text style={[BaseStyles.text, styles.text]}> this is a long text </Text>
+      </View>
+    );
+  }
+}
+const styles = StyleSheet.create({
+  text:{
+    color: '#ffffff'
+  }
+});
 ```
