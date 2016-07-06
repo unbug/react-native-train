@@ -66,3 +66,4 @@ const styles = StyleSheet.create({
   }
 });
 ```
+![](QQ20160706-5.png)
