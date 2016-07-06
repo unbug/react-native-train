@@ -18,7 +18,7 @@
    * [3.1 Flexbox](31_flexbox.md)
    * [3.2 Absolute & Relative](32_absolute_&_relative.md)
    * [3.3 Size & Dimensions & onLayout](33_size_&_dimensions_&_onlayout.md)
-   * 3.4 Inheritance
+   * [3.4 Inheritance](34_inheritance.md)
    * [3.5 Resources](35_resources.md)
 * 4 Architecture
    * [4.1 Redux+React](41_redux+react.md)
