@@ -36,6 +36,15 @@ const styles = StyleSheet.create({
 
 2.concatenation styles
 
-```
+BaseStyles.js
 
+```
+import { StyleSheet,Dimensions } from 'react-native';
+let winSize = Dimensions.get('window');
+const BaseStyles = StyleSheet.create({
+  text: {
+    fontSize: 40/winSize.scale
+  }
+});
+export default BaseStyles;
 ```
