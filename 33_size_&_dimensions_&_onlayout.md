@@ -8,7 +8,7 @@ console.log(winSize);
 
 ```
 
-2.onLayout
+2.[onLayout](http://facebook.github.io/react-native/releases/0.28/docs/view.html#onlayout)
 
 ```
 class Size extends Component {
