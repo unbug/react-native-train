@@ -1,7 +1,7 @@
 # 3.2 Absolute & Relative
 
 
-1.Absolute
+1.absolute
 
 ![](QQ20160706-0.png)
 
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   },
 ```
 
-3.Relative
+3.relative
 
 ![](QQ20160706-1.png)
 
