@@ -55,7 +55,7 @@
    * [8.3 Resources](73_resources.md)
 * [9 Integration](8_integration.md)
    * [9.1 iOS](81_ios.md)
-       * [9.1.1 Package you](911_package.md)
+       * [9.1.1 Package your App](911_package.md)
        * [9.1.2 Image](912_image.md)
    * [9.2 Android](82_android.md)
        * 9.2.1 Package
