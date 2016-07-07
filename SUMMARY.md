@@ -57,7 +57,6 @@
    * [9.1 iOS](81_ios.md)
    * [9.2 Android](82_android.md)
    * [9.3 Before publishing](83_before_publishing.md)
-   * [9.4 Images](94_images.md)
    * [9.5 Resources](83_resources.md)
 * 10 Hot Update
    * 10.1 iOS
