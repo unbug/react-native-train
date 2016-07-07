@@ -56,6 +56,7 @@
 * [9 Integration](8_integration.md)
    * [9.1 iOS](81_ios.md)
        * [9.1.1 Package](911_package.md)
+       * 9.1.2 Image
    * [9.2 Android](82_android.md)
    * [9.3 Before publishing](83_before_publishing.md)
    * [9.4 Resources](83_resources.md)
