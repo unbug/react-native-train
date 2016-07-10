@@ -6,4 +6,4 @@ We are [working on it](https://www.gitbook.com/book/unbug/react-native-training/
 
 ![](QQ20160630-5.png)
 
-Please [leave a message](https://www.gitbook.com/book/unbug/react-native-training/discussions) or contact [@unbug](https://github.com/unbug) for further enquiries.
+Please [leave a message](https://www.gitbook.com/book/unbug/react-native-training/discussions) or contact [@unbug](https://github.com/unbug) for further enquiries......
