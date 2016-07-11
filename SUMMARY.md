@@ -20,7 +20,7 @@
    * [3.3 Size & Dimensions & onLayout](33_size_&_dimensions_&_onlayout.md)
    * [3.4 Inheritance](34_inheritance.md)
    * [3.5 Resources](35_resources.md)
-* 4 Architecture
+* [4 Architecture](4_architecture.md)
    * [4.1 Redux+React](41_redux+react.md)
    * 4.2 Containers & Components
    * 4.3 Actions & Reducers
