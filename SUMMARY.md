@@ -22,12 +22,12 @@
    * [3.5 Resources](35_resources.md)
 * [4 Architecture](4_architecture.md)
    * [4.1 Redux+React](41_redux+react.md)
+   * 4.2 react-redux
    * 4.2 Containers & Components
    * 4.4 Statics, Constants, etc
    * 4.5 Naming convention
    * 4.6 Todo React Native App
    * [4.7 Resources](47_resources.md)
-   * 4.2 react-redux
 * 5 ES6/7
    * 5.1 export, import
    * 5.2 let, const
