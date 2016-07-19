@@ -5,8 +5,8 @@
 ![](QQ20160719-2.png)
 
 ```
-export const ADD_TODO = 'ADD_TODO';
-export function addTodo(title, hour) {
+const ADD_TODO = 'ADD_TODO';
+function addTodo(title, hour) {
   return {type: types.ADD_TODO, title, hour}
 }
 ```
