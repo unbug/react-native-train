@@ -2,7 +2,6 @@
 
 1.Actions & Action Creators
 
-![](QQ20160719-2.png)
 
 ```
 //action type
