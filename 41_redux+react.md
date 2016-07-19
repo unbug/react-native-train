@@ -7,6 +7,6 @@
 ```
 const ADD_TODO = 'ADD_TODO';
 function addTodo(title, hour) {
-  return {type: types.ADD_TODO, title, hour}
+  return {type: ADD_TODO, title, hour}
 }
 ```
