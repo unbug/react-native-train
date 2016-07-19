@@ -27,6 +27,7 @@
    * 4.5 Naming convention
    * 4.6 Todo React Native App
    * [4.7 Resources](47_resources.md)
+   * 4.2 react-redux
 * 5 ES6/7
    * 5.1 export, import
    * 5.2 let, const
