@@ -11,6 +11,12 @@
 
 ![](QQ20160719-2.png)
 
+```
+export function addTodo(title, hour) {
+  return {type: types.ADD_TODO, title, hour}
+}
+```
+
 
 [Flux TodoMVC Example](https://github.com/facebook/flux/tree/master/examples/flux-todomvc/)
 
