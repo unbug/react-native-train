@@ -1,2 +1,2 @@
-# 4.1 Redux
+# 4.1 Redux+React
 
