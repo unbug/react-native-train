@@ -22,7 +22,7 @@
    * [3.5 Resources](35_resources.md)
 * [4 Architecture](4_architecture.md)
    * 4.1 Containers & Components
-   * [4.1 Redux](41_redux+react.md)
+   * [4.2 Redux](41_redux+react.md)
    * 4.3 Actions & Reducers
    * 4.4 Statics, Constants, etc
    * 4.5 Naming convention
