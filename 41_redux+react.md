@@ -1,4 +1,4 @@
-# 4.1 Redux
+# 4.1 [Redux](http://redux.js.org/)
 
 1.Actions & Action Creators
 
