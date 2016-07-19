@@ -2,7 +2,6 @@
 
 1.Actions & Action Creators
 
-
 ```
 //action type
 const ADD_TODO = 'ADD_TODO';
