@@ -1,6 +1,6 @@
 # 4.1 [Redux](http://redux.js.org/)
 
-1.Actions & Action Creators
+1.[Actions](https://github.com/acdlite/flux-standard-action) & Action Creators
 
 ```
 //action type
