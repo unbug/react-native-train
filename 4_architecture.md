@@ -7,6 +7,10 @@
 
 ![](QQ20160719-1.png)
 
+3.Actions & Action Creators
+
+![](QQ20160719-2.png)
+
 
 [Flux TodoMVC Example](https://github.com/facebook/flux/tree/master/examples/flux-todomvc/)
 
