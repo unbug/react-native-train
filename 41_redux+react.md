@@ -46,7 +46,7 @@ class HomeView extends Component {
     this.state = {todos: []};
   }
   componentDidMount(){
-    store..startTimer();
+    store.startTimer();
   }
   render() {
     return (
