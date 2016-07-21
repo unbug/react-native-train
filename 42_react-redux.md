@@ -13,3 +13,29 @@ const rootReducer = combineReducers({
 export default rootReducer;
 
 ```
+
+2.mapStateToProps & mapDispatchToProps
+
+```
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+...
+
+...
+function mapStateToProps(state) {
+  return {
+    todos: state.todos
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(Actions, dispatch)
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(TodoView);
+```
