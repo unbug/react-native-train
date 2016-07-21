@@ -76,7 +76,7 @@ class TodoView extends Component {
         <TouchableHighlight onPress={this.handleAddTodo}>
           <Text>Add Todo</Text>
         </TouchableHighlight>
-        <ScrollView>{this.renderTodoList(Math.random())}</ScrollView>
+        <ScrollView>{this.renderTodoList(Math.random()*10)}</ScrollView>
       </View>
     );
   }
