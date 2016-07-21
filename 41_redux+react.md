@@ -85,3 +85,5 @@ class TodoView extends Component {
 ```
 4.Data flow
 
+![](QQ20160721-0.png)
+
