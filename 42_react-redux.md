@@ -21,7 +21,40 @@ const rootReducer = combineReducers({
 export default rootReducer;
 
 ```
+3.configureStore()
 
+```
+import { createStore } from 'redux';
+import reducers from '../reducers';
+
+export default function configureStore() {
+  const store = createStore(reducers, undefined);
+  return store;
+}
+
+```
+
+4.Provider
+
+```
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+
+import App from './containers/App';
+import configureStore from './store/configureStore';
+
+class Root extends Component {
+  render() {
+    return (
+      <Provider store={configureStore()}>
+        <App />
+      </Provider>
+    );
+  }
+}
+
+export default Root;
+```
 3.mapStateToProps & mapDispatchToProps
 
 ```
