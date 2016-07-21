@@ -64,13 +64,12 @@ import { connect } from 'react-redux';
 class App extends Component {
   renderTodoList = ()=>{
     //reder todo list
-    return this.state.todos.map( (todo)=> {
+    return this.props.todos.map( (todo)=> {
       return <Text key={todo.id}>Todo: {todo.title}</Text>
     });
   }
   handleAddTodo = ()=>{
-    //4. dispatching actions
-    store.dispatch( addTodoAction('Create a new todo', 8) );
+    this.props.actions.addTodoAction('Create a new todo', 8);
   }
   render() {
     return (
