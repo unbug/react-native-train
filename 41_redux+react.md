@@ -1,4 +1,4 @@
-
+o
 1.[Actions](https://github.com/acdlite/flux-standard-action) & Action Creators
 
 ```
@@ -40,7 +40,7 @@ import { createStore } from 'redux';
 //define store
 let store = createStore(todoReducers);
 
-class HomeView extends Component {
+class TodoView extends Component {
   constructor(props){
     super(props);
     this.state = {todos: []};
