@@ -1,4 +1,12 @@
 # 4.2 [react-redux](https://github.com/reactjs/react-redux)
+1.Actions
+
+```
+import * as  navigationActions from './navigation';
+import * as  todosActions from './todos';
+
+export default {...navigationActions, ...todosActions};
+```
 
 1.combineReducers()
 ```
