@@ -55,7 +55,7 @@ class TodoView extends Component {
     //unsubscribe store
     this.unsubscribeStore();
   }
-  renderList = ()=>{
+  renderTodoList = ()=>{
     //reder todo list
     return this.state.todos.map( (todo)=> {
       return <Text key={todo.id}>Todo: {todo.title}</Text>
@@ -71,7 +71,7 @@ class TodoView extends Component {
         <TouchableHighlight onPress={this.handleAddTodo}>
           <Text>Add Todo</Text>
         </TouchableHighlight>
-        <ScrollView>{this.renderList()}</ScrollView>
+        <ScrollView>{this.renderTodoList()}</ScrollView>
       </View>
     );
   }
