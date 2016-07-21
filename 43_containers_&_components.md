@@ -39,4 +39,4 @@
     </tbody>
 </table>
 
-2.HomeView
+2.containers/HomeView & components/home-view
