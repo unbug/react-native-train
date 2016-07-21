@@ -21,7 +21,7 @@ const rootReducer = combineReducers({
 export default rootReducer;
 
 ```
-3.configureStore()
+3.Application state by configureStore()
 
 ```
 import { createStore } from 'redux';
