@@ -53,10 +53,15 @@ class HomeView extends Component {
   componentWillUnmount(){
     this.unsubscribeStore();
   }
+  renderList = ()=>{
+    return this.state.todos.map( (todo)=> {
+      return <Text key={todo.id}>Todo: {todo.title}</Text>
+    });
+  }
   render() {
     return (
       <View>
-        <Text>Todo T</Text>
+        {getList()}
       </View>
     );
   }
