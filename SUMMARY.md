@@ -24,7 +24,7 @@
    * [4.1 Redux](41_redux+react.md)
    * 4.2 react-redux
    * 4.3 Containers & Components
-   * 4.6 Todo React Native App
+   * 4.4 Todo React Native App
    * 4.4 Statics, Constants, etc
    * 4.5 Naming convention
    * [4.7 Resources](47_resources.md)
