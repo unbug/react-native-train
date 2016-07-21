@@ -1,6 +1,6 @@
 # 4.3 Containers & Components
 
-1.Presentational and Container Components
+1.[Presentational and Container Components](http://redux.js.org/docs/basics/UsageWithReact.html)
 
 <table>
     <thead>
