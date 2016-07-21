@@ -55,7 +55,7 @@ class Root extends Component {
 
 export default Root;
 ```
-3.mapStateToProps & mapDispatchToProps & bindActionCreators
+6.mapStateToProps & mapDispatchToProps & bindActionCreators
 
 ```
 import { bindActionCreators } from 'redux';
@@ -100,3 +100,5 @@ export default connect(
   mapDispatchToProps
 )(App);
 ```
+
+7.
