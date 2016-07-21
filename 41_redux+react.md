@@ -1,4 +1,3 @@
-# 4.1 [Redux](http://redux.js.org/)
 
 1.[Actions](https://github.com/acdlite/flux-standard-action) & Action Creators
 
@@ -69,10 +68,10 @@ class HomeView extends Component {
   render() {
     return (
       <View>
-        <ScrollView>{this.renderList()}</ScrollView>
         <TouchableHighlight onPress={this.handleAddTodo}>
           <Text>Add Todo</Text>
         </TouchableHighlight>
+        <ScrollView>{this.renderList()}</ScrollView>
       </View>
     );
   }
