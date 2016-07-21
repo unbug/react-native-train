@@ -68,7 +68,7 @@ class TodoView extends Component {
   }
   handleAddTodo = ()=>{
     //4. dispatching actions
-    store.dispatch( addTodoAction(`Create a new todo`) );
+    store.dispatch( addTodoAction('Create a new todo', 8) );
   }
   render() {
     return (
