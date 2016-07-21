@@ -44,7 +44,7 @@
 2.1 home-view components
 ![](QQ20160721-1.png)
 
-2.2 HomeView containers
+2.2 HomeView container
 
 ```
 import {
