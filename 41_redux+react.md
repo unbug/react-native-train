@@ -61,7 +61,7 @@ class HomeView extends Component {
   render() {
     return (
       <View>
-        {getList()}
+        {this.renderList()}
       </View>
     );
   }
