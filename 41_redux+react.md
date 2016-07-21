@@ -62,15 +62,20 @@ class HomeView extends Component {
       return <Text key={todo.id}>Todo: {todo.title}</Text>
     });
   }
+  handleAddTodo = ()=>{
+    //dispatching actions
+    store.dispatch(addTodoAction('Create a new todo'))
+  }
   render() {
     return (
       <View>
-        {this.renderList()}
+        <ScrollView>{this.renderList()}</ScrollView>
+        <TouchableHighlight onPress={this.handleAddTodo}>
+          <Text>Add Todo</Text>
+        </TouchableHighlight>
       </View>
     );
   }
 }
 
-//dispatching actions
-store.dispatch(addTodoAction('Create a new todo'))
 ```
