@@ -41,7 +41,7 @@ function todoReducers(state = [], action) {
 
 ```
 import { createStore } from 'redux';
-//define store
+//1. define store
 let store = createStore(todoReducers);
 
 class TodoView extends Component {
@@ -50,13 +50,14 @@ class TodoView extends Component {
     this.state = {todos: []};
   }
   componentDidMount(){
-    //subscribe store
-    this.unsubscribeStore = store.subscribe(() =>
+    //2. subscribe store
+    this.unsubscribeStore = store.subscribe(() =>{
+      //3. getState
       this.setState({todos: store.getState()});
-    );
+    });
   }
   componentWillUnmount(){
-    //unsubscribe store
+    //5. unsubscribe store
     this.unsubscribeStore();
   }
   renderTodoList = ()=>{
@@ -66,7 +67,7 @@ class TodoView extends Component {
     });
   }
   handleAddTodo = (num)=>{
-    //dispatching actions
+    //4. dispatching actions
     store.dispatch( addTodoAction(`Create a new todo ${num}`) );
   }
   render() {
