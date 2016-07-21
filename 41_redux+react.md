@@ -46,7 +46,9 @@ class HomeView extends Component {
     this.state = {todos: []};
   }
   componentDidMount(){
-    store.startTimer();
+    this.unsubscribe = store.subscribe(() =>
+      this.setState({todos: store.getState()});
+    );
   }
   render() {
     return (
