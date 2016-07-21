@@ -61,9 +61,9 @@ class TodoView extends Component {
       return <Text key={todo.id}>Todo: {todo.title}</Text>
     });
   }
-  handleAddTodo = ()=>{
+  handleAddTodo = (num)=>{
     //dispatching actions
-    store.dispatch(addTodoAction('Create a new todo'))
+    store.dispatch( addTodoAction(`Create a new todo ${num}`) );
   }
   render() {
     return (
@@ -71,7 +71,7 @@ class TodoView extends Component {
         <TouchableHighlight onPress={this.handleAddTodo}>
           <Text>Add Todo</Text>
         </TouchableHighlight>
-        <ScrollView>{this.renderTodoList()}</ScrollView>
+        <ScrollView>{this.renderTodoList(Math.random())}</ScrollView>
       </View>
     );
   }
