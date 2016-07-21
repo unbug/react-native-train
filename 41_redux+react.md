@@ -1,4 +1,5 @@
-o
+# 4.1 Redux
+
 1.[Actions](https://github.com/acdlite/flux-standard-action) & Action Creators
 
 ```
