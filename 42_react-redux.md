@@ -62,21 +62,6 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {todos: []};
-  }
-  componentDidMount(){
-    //2. subscribe store
-    this.unsubscribeStore = store.subscribe(() =>{
-      //3. getState
-      this.setState({todos: store.getState()});
-    });
-  }
-  componentWillUnmount(){
-    //5. unsubscribe store
-    this.unsubscribeStore();
-  }
   renderTodoList = ()=>{
     //reder todo list
     return this.state.todos.map( (todo)=> {
