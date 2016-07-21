@@ -23,7 +23,7 @@
 * [4 Architecture](4_architecture.md)
    * [4.1 Redux](41_redux+react.md)
    * [4.2 react-redux](42_react-redux.md)
-   * 4.3 Containers & Components
+   * [4.3 Containers & Components](43_containers_&_components.md)
    * 4.4 Todo React Native App
    * 4.5 Statics, Constants, etc
    * 4.6 Naming convention
