@@ -46,7 +46,6 @@
 
 2.2 HomeView containers
 
-
 ```
 import {
   Header,
