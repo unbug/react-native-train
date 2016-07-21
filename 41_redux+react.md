@@ -13,7 +13,7 @@ function addTodoAction(title, hour) {
   return {type: ADD_TODO, title, hour}
 }
 ```
-2.[Reducers](http://redux.js.org/docs/basics/Reducers.html)
+2.[Reducers](http://redux.js.org/docs/basics/Reducers.html) &  combineReducers()
 
 ```
 //a function that accepts an accumulation and a value and returns a new accumulation.
