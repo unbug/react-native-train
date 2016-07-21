@@ -72,5 +72,5 @@ class HomeView extends Component {
 }
 
 
-
+store.dispatch(addTodoAction('Create a new todo'))
 ```
