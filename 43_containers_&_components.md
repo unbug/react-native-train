@@ -39,4 +39,4 @@
     </tbody>
 </table>
 
-2.
+2.HomeView
