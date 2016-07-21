@@ -40,6 +40,8 @@
 </table>
 
 2.`components/home-view` & `containers/HomeView`
+
+
 ```
 import {
   Header,
