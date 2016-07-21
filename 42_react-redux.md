@@ -80,7 +80,7 @@ export default connect(
 )(App);
 ```
 
-5.`<Provider/>`
+5.Passing the Store with `<Provider/>`
 
 ```
 import React, { Component } from 'react';
