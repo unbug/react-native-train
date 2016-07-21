@@ -34,28 +34,7 @@ export default function configureStore() {
 
 ```
 
-4.Provider
-
-```
-import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-
-import App from './containers/App';
-import configureStore from './store/configureStore';
-
-class Root extends Component {
-  render() {
-    return (
-      <Provider store={configureStore()}>
-        <App />
-      </Provider>
-    );
-  }
-}
-
-export default Root;
-```
-6.mapStateToProps & mapDispatchToProps & bindActionCreators
+4.mapStateToProps & mapDispatchToProps & bindActionCreators
 
 ```
 import { bindActionCreators } from 'redux';
@@ -101,4 +80,24 @@ export default connect(
 )(App);
 ```
 
-7.
+5.Provider
+
+```
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+
+import App from './containers/App';
+import configureStore from './store/configureStore';
+
+class Root extends Component {
+  render() {
+    return (
+      <Provider store={configureStore()}>
+        <App />
+      </Provider>
+    );
+  }
+}
+
+export default Root;
+```
