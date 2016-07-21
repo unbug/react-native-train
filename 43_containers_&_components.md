@@ -39,4 +39,39 @@
     </tbody>
 </table>
 
-2.containers/HomeView & components/home-view
+2.`components/home-view` & `containers/HomeView`
+```
+import {
+  Header,
+  Main,
+} from '../components/home-view';
+import Actions from '../actions';
+
+class HomeView extends Component {
+  render() {
+    return (
+      <View>
+        <Header {...this.props}/>
+        <Main {...this.props} isVisible={this.state.isVisible}/>
+      </View>
+    );
+  }
+}
+
+function mapStateToProps(state) {
+  return {
+    todos: state.todos
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(Actions, dispatch)
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(HomeView);
+```
