@@ -41,6 +41,7 @@
 
 2.`components/home-view` & `containers/HomeView`
 
+![](QQ20160721-1.png)
 
 ```
 import {
