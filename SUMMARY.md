@@ -26,7 +26,7 @@
    * [4.3 Containers & Components](43_containers_&_components.md)
    * [4.4 Todo React Native App](44_todo_react_native_app.md)
    * 4.5 Naming convention
-   * [4.7 Resources](47_resources.md)
+   * [4.6 Resources](47_resources.md)
 * 5 ES6/7
    * 5.1 export, import
    * 5.2 let, const
