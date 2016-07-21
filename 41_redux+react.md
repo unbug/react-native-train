@@ -20,7 +20,7 @@ function addTodoAction(title, hour) {
 function todoReducers(state = [], action) {
   switch (action.type) {
     case ADD_TODO:
-      //always return new state, never mutate old state
+      //always create new state, never mutate old state
       return [
         {
           id: Utils.GUID(),
