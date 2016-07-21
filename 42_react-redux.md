@@ -60,9 +60,45 @@ export default Root;
 ```
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-...
 
-...
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {todos: []};
+  }
+  componentDidMount(){
+    //2. subscribe store
+    this.unsubscribeStore = store.subscribe(() =>{
+      //3. getState
+      this.setState({todos: store.getState()});
+    });
+  }
+  componentWillUnmount(){
+    //5. unsubscribe store
+    this.unsubscribeStore();
+  }
+  renderTodoList = ()=>{
+    //reder todo list
+    return this.state.todos.map( (todo)=> {
+      return <Text key={todo.id}>Todo: {todo.title}</Text>
+    });
+  }
+  handleAddTodo = ()=>{
+    //4. dispatching actions
+    store.dispatch( addTodoAction('Create a new todo', 8) );
+  }
+  render() {
+    return (
+      <View>
+        <TouchableHighlight onPress={this.handleAddTodo}>
+          <Text>Add Todo</Text>
+        </TouchableHighlight>
+        <ScrollView>{this.renderTodoList()}</ScrollView>
+      </View>
+    );
+  }
+}
+
 function mapStateToProps(state) {
   return {
     todos: state.todos
