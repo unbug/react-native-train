@@ -8,7 +8,7 @@ import * as  todosActions from './todos';
 export default {...navigationActions, ...todosActions};
 ```
 
-1.combineReducers()
+2.combineReducers()
 ```
 import { combineReducers } from 'redux';
 import navigation from './navigation';
@@ -22,7 +22,7 @@ export default rootReducer;
 
 ```
 
-2.mapStateToProps & mapDispatchToProps
+3.mapStateToProps & mapDispatchToProps
 
 ```
 import { bindActionCreators } from 'redux';
