@@ -38,6 +38,7 @@ function todoReducers(state = [], action) {
 
 ```
 import { createStore } from 'redux';
+//define store
 let store = createStore(todoReducers);
 
 class HomeView extends Component {
@@ -46,14 +47,17 @@ class HomeView extends Component {
     this.state = {todos: []};
   }
   componentDidMount(){
+    //subscribe store
     this.unsubscribeStore = store.subscribe(() =>
       this.setState({todos: store.getState()});
     );
   }
   componentWillUnmount(){
+    //unsubscribe store
     this.unsubscribeStore();
   }
   renderList = ()=>{
+    //reder todo list
     return this.state.todos.map( (todo)=> {
       return <Text key={todo.id}>Todo: {todo.title}</Text>
     });
@@ -66,4 +70,5 @@ class HomeView extends Component {
     );
   }
 }
+
 ```
