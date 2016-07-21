@@ -16,9 +16,11 @@ function addTodoAction(title, hour) {
 2.Reducers
 
 ```
+//a function that accepts an accumulation and a value and returns a new accumulation.
 function todoReducers(state = [], action) {
   switch (action.type) {
     case ADD_TODO:
+      //always return new state, never mutate old state
       return [
         {
           id: Utils.GUID(),
@@ -29,6 +31,7 @@ function todoReducers(state = [], action) {
         ...state
       ]
     default:
+      //return default state
       return state
   }
 }
@@ -79,3 +82,4 @@ class TodoView extends Component {
 }
 
 ```
+4.C
