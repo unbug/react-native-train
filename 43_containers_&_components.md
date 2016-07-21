@@ -45,6 +45,8 @@
 ![](QQ20160721-1.png)
 
 2.2 HomeView containers
+
+
 ```
 import {
   Header,
