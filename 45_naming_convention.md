@@ -12,4 +12,17 @@ handleEventName = ()=>{//todo}
 <MyComponent onEventName={this.handleEventName}/>
 ```
 
-1.3 
+1.3 Render methods:
+
+```
+  renderMethodName = () => {
+   //todo
+  }
+  render() {
+    return (
+      <View>
+        {this.renderMethodName()}
+      </View>
+    );
+  }
+````
