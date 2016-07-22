@@ -81,3 +81,18 @@ index.js
 todos.js
 navigation.js
 ```
+3.1```src/reducers/todos.js```
+```
+import { ADD_TODO, DELETE_TODO, EDIT_TODO, COMPLETE_TODO } from '../constants/ActionTypes'
+const initialState = []
+
+export default function todos(state = initialState, action) {
+  switch (action.type) {
+    case ADD_TODO:
+      //todo
+    default:
+      return state
+  }
+}
+
+```
