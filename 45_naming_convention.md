@@ -52,7 +52,13 @@ function mapDispatchToProps(dispatch) {
 }
 ```
 
-2.actions
+2.actions ```src/actions```
+
+```
+index.js
+todos.js
+navigation.js
+```
 
 2.1```src/constants/ActionTypes.js```
 
@@ -70,3 +76,5 @@ export function addTodo(title, hour) {
   return {type: types.ADD_TODO, title, hour}
 }
 ```
+
+3reducers
