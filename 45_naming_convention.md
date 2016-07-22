@@ -39,6 +39,13 @@ handleEventName = ()=>{//todo}
 
 2.actions
 
+2.1```src/constants/ActionTypes.js```
+
+````
+export const SWITCH_MAIN_TAB = 'SWITCH_MAIN_TAB';
+
+````
+
 ```
 function mapStateToProps(state) {
   return {
