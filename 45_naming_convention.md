@@ -39,7 +39,6 @@ handleEventName = ()=>{//todo}
 1.4mapStateToProps & mapDispatchToProps
 
 ```
-```
 function mapStateToProps(state) {
   return {
     todos: state.todos
@@ -51,7 +50,6 @@ function mapDispatchToProps(dispatch) {
     actions: bindActionCreators(Actions, dispatch)
   }
 }
-```
 ```
 
 2.actions
