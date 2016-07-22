@@ -1,9 +1,12 @@
 # 4 Architecture
+1.MVC problems
 
-1.[Flux](http://facebook.github.io/flux/docs/overview.html)
+![](QQ20160722-0.png)
+
+2.[Flux](http://facebook.github.io/flux/docs/overview.html)
 
 ![](flux-diagram-white-background.png)
-2.Data flow
+3.Data flow
 
 ![](QQ20160719-1.png)
 
