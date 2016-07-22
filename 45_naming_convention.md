@@ -96,4 +96,41 @@ export default function todos(state = initialState, action) {
 }
 
 ```
-4.
+4.styles```src/styles```
+
+```
+index.js
+Basic.js
+Theme.js
+```
+4.1```src/styles/Basic.js```
+
+```
+import { StyleSheet, Dimensions } from 'react-native';
+let winSize = Dimensions.get('window');
+const Basic = StyleSheet.create({
+  text: {
+    fontSize: 32/winSize.scale
+  }
+});
+export default Basic;
+
+```
+4.2```src/styles/Theme.js```
+
+```
+//colors
+const color = {
+  green: '#00551e',
+  brown: '#693504',
+  red: '#db2828'
+}
+
+//other
+const active = {
+  opacity: 0.6
+}
+
+export default {color, active}
+```
+4.3```import {Theme, BasicStyle} from '../../styles';```
