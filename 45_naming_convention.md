@@ -2,7 +2,7 @@
 
 1.Containers & Components
 
-1.1 Container file: ```src/containers/ModuleNameView.js```, Component files:```src/components/module-name-view```
+1.1. Container file: ```src/containers/ModuleNameView.js```, Component files:```src/components/module-name-view```
 ```
 module-name-view
  - index.js
@@ -14,7 +14,7 @@ module-name-view
    - icon@3x.png
 ```
 
-1.2 Event name: 
+1.2. Event name: 
 
 ```
 handleEventName = ()=>{//todo}
@@ -22,7 +22,7 @@ handleEventName = ()=>{//todo}
 <MyComponent onEventName={this.handleEventName}/>
 ```
 
-1.3 Render methods:
+1.3. Render methods:
 
 ```
   renderMethodName = () => {
@@ -36,7 +36,7 @@ handleEventName = ()=>{//todo}
     );
   }
 ````
-1.4mapStateToProps & mapDispatchToProps
+1.4. mapStateToProps & mapDispatchToProps
 
 ```
 function mapStateToProps(state) {
@@ -75,13 +75,13 @@ export function addTodo(title, hour) {
 }
 ```
 
-3reducers```src/reducers```
+3.reducers```src/reducers```
 ```
 index.js
 todos.js
 navigation.js
 ```
-3.1```src/reducers/todos.js```
+3.1.```src/reducers/todos.js```
 ```
 import { ADD_TODO, DELETE_TODO, EDIT_TODO, COMPLETE_TODO } from '../constants/ActionTypes'
 const initialState = []
@@ -96,3 +96,4 @@ export default function todos(state = initialState, action) {
 }
 
 ```
+4.
