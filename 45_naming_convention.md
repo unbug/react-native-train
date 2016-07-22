@@ -2,9 +2,14 @@
 
 1.Containers & Components
 
-1.1. Container file: ```src/containers/ModuleNameView.js```, Component files:```src/components/module-name-view```
+1.1. Container file: 
 ```
-module-name-view
+src/containers/ModuleNameView.js
+```
+Component files:
+```
+```
+src/components/module-name-view
  - index.js
  - Main.js
  - Header.js
