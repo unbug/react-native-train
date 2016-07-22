@@ -36,6 +36,23 @@ handleEventName = ()=>{//todo}
     );
   }
 ````
+1.4mapStateToProps & mapDispatchToProps
+
+```
+```
+function mapStateToProps(state) {
+  return {
+    todos: state.todos
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(Actions, dispatch)
+  }
+}
+```
+```
 
 2.actions
 
@@ -53,17 +70,5 @@ import * as types from '../constants/ActionTypes'
 
 export function addTodo(title, hour) {
   return {type: types.ADD_TODO, title, hour}
-}
-```
-function mapStateToProps(state) {
-  return {
-    todos: state.todos
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(Actions, dispatch)
-  }
 }
 ```
