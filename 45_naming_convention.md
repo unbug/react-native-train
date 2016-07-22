@@ -11,4 +11,5 @@ handleEventName = ()=>{//todo}
 ...
 <MyComponent onEventName={this.handleEventName}/>
 ```
+
 1.3 
