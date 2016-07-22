@@ -77,4 +77,9 @@ export function addTodo(title, hour) {
 }
 ```
 
-3reducers
+3reducers```src/reducers```
+```
+index.js
+todos.js
+navigation.js
+```
