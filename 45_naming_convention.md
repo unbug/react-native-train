@@ -45,7 +45,15 @@ handleEventName = ()=>{//todo}
 export const SWITCH_MAIN_TAB = 'SWITCH_MAIN_TAB';
 
 ````
+2.2```src/actions/todos.js````
+```
 
+```
+import * as types from '../constants/ActionTypes'
+
+export function addTodo(title, hour) {
+  return {type: types.ADD_TODO, title, hour}
+}
 ```
 function mapStateToProps(state) {
   return {
