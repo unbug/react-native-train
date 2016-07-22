@@ -2,7 +2,17 @@
 
 1.Containers & Components
 
-1.1 Container name: ```src/containers/ModuleNameView.js```, Component name:```src/components/module-name-view```
+1.1 Container file: ```src/containers/ModuleNameView.js```, Component files:```src/components/module-name-view```
+```
+module-name-view
+ - index.js
+ - Main.js
+ - Header.js
+ - ...
+ - img
+   - icon@2x.png
+   - icon@3x.png
+```
 
 1.2 Event name: 
 
@@ -26,3 +36,5 @@ handleEventName = ()=>{//todo}
     );
   }
 ````
+
+1.4
