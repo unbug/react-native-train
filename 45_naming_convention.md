@@ -37,7 +37,7 @@ handleEventName = ()=>{//todo}
   }
 ````
 
-2.action & state
+2.actions
 
 ```
 function mapStateToProps(state) {
