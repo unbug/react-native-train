@@ -37,4 +37,18 @@ handleEventName = ()=>{//todo}
   }
 ````
 
-1.4
+1.4 action & state
+
+```
+function mapStateToProps(state) {
+  return {
+    todos: state.todos
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(Actions, dispatch)
+  }
+}
+```
