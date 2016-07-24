@@ -86,6 +86,9 @@ class App extends Component {
 ```
 4.Data flow
 
+![](QQ20160724-0.png)
+
+
 ![](QQ20160721-2.png)
 
 ![](QQ20160721-3.png)
