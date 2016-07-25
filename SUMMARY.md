@@ -34,7 +34,7 @@
 * 7 Animations
    * 7.1 Navigator Scene Transitions
    * [7.2 Resources](72_resources.md)
-* 5 ES6/7
+* 7 ES6/7
    * 5.1 export, import
    * 5.2 let, const
    * 5.3 function, extends
