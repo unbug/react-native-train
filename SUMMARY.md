@@ -28,7 +28,7 @@
    * [4.5 Naming convention](45_naming_convention.md)
    * [4.6 Resources](47_resources.md)
 * [5 Data](5_data.md)
-   * 5.1 Fetch
+   * [5.1 Fetch](51_fetch.md)
    * 5.2 Persistent
    * 5.3 Resources
 * 6 Animations
