@@ -40,7 +40,7 @@
    * 7.3 function, extends
    * 7.4 map, array, string, spread operator, destructuring assignment
    * 7.5 this, bind, =>
-   * 5.6 Promise
+   * 7.6 Promise
    * 5.7 Resources
 * [8 Native Modules](7_native_modules.md)
    * [8.1 iOS](71_ios.md)
