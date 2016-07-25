@@ -1,3 +1,3 @@
 # 7.7 Resources
 
-- [React Native JavaScript Environment](https://facebook.github.io/react-native/docs/javascript-environment.html)
+- [React Native JavaScript Syntax Transformers](https://facebook.github.io/react-native/docs/javascript-environment.html#javascript-syntax-transformers)
