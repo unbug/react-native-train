@@ -37,7 +37,7 @@
    * 5.7 Resources
 * 6 Data
    * 6.1 Fetch
-   * 6.2 Persistent Data
+   * 6.2 Persistent
    * 6.3 Resources
 * 7 Animations
    * 7.1 Navigator Scene Transitions
