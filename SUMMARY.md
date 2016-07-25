@@ -31,7 +31,7 @@
    * 6.1 Fetch
    * 6.2 Persistent
    * 6.3 Resources
-* 7 Animations
+* 6 Animations
    * 7.1 Navigator Scene Transitions
    * [7.2 Resources](72_resources.md)
 * 7 ES6/7
