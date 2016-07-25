@@ -32,7 +32,7 @@
    * 5.2 Persistent
    * 5.3 Resources
 * 6 Animations
-   * 7.1 Navigator Scene Transitions
+   * 6.1 Navigator Scene Transitions
    * [7.2 Resources](72_resources.md)
 * 7 ES6/7
    * 5.1 export, import
