@@ -36,7 +36,7 @@
    * [6.2 Resources](72_resources.md)
 * 7 ES6/7
    * 7.1 export, import
-   * 5.2 let, const
+   * 7.2 let, const
    * 5.3 function, extends
    * 5.4 map, array, string, spread operator, destructuring assignment
    * 5.5 this, bind, =>
