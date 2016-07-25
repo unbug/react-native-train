@@ -29,7 +29,7 @@
    * [4.6 Resources](47_resources.md)
 * 5 Data
    * 5.1 Fetch
-   * 6.2 Persistent
+   * 5.2 Persistent
    * 6.3 Resources
 * 6 Animations
    * 7.1 Navigator Scene Transitions
