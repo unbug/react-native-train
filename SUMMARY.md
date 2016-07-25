@@ -27,7 +27,7 @@
    * [4.4 Todo React Native App](44_todo_react_native_app.md)
    * [4.5 Naming convention](45_naming_convention.md)
    * [4.6 Resources](47_resources.md)
-* 6 Data
+* 5 Data
    * 6.1 Fetch
    * 6.2 Persistent
    * 6.3 Resources
