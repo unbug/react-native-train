@@ -41,7 +41,7 @@
    * 7.4 map, array, string, spread operator, destructuring assignment
    * 7.5 this, bind, =>
    * 7.6 Promise
-   * 7.7 Resources
+   * [7.7 Resources](77_resources.md)
 * [8 Native Modules](7_native_modules.md)
    * [8.1 iOS](71_ios.md)
        * 8.1.1 JS call OC
