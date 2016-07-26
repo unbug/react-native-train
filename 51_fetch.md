@@ -108,3 +108,5 @@ export default function todos(state = initialState, action) {
   }
 ...
 ```
+
+![](QQ20160726-2.png)
