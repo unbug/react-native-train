@@ -62,8 +62,6 @@ export function fetchAllTodos() {
 }
 ```
 
-![](QQ20160726-0.png)
-
 4.reducer
 
 ```
