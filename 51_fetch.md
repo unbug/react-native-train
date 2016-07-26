@@ -24,7 +24,7 @@ export default function configureStore() {
 export const START_FETCH_ALL_TODOS = 'START_FETCH_ALL_TODOS';
 export const FETCH_ALL_TODOS = 'FETCH_ALL_TODOS';
 ```
-3.fetch API
+3.fetch flow
 ```
 import * as types from '../constants/ActionTypes';
 import * as APIs from '../constants/ServerAPIs';
