@@ -7,7 +7,8 @@ import { applyMiddleware, createStore, compose } from 'redux';
 import thunk from 'redux-thunk';
 import createLogger from 'redux-logger';
 import reducers from '../reducers';
-var middlewares = compose(applyMiddleware(thunk, logger), autoRehydrate());
+
+var middlewares = compose(applyMiddleware(thunk), autoRehydrate());
 
 export default function configureStore() {
   const store = createStore(reducers, undefined, middlewares);
