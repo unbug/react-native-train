@@ -43,6 +43,8 @@ class App extends Component {
 
 3.forward & back
 
+![](QQ20160727-0.png)
+
 ```
 ...
   handleEdit = ()=>{
