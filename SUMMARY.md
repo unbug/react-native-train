@@ -50,7 +50,7 @@
        * [8.1.2 Image](912_image.md)
    * [8.2 Android](82_android.md)
        * [8.2.1 Package](921_package.md)
-       * 9.2.2 Image
+       * 8.2.2 Image
    * [9.3 Before publishing](83_before_publishing.md)
    * [9.4 Resources](83_resources.md)
 * 10 Hot Update
