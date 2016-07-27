@@ -32,7 +32,7 @@
    * [5.2 Persistent](52_persistent.md)
    * [5.3 Resources](53_resources.md)
 * [6 Router](6_router.md)
-   * 6.1 Navigator
+   * [6.1 Navigator](61_navigator.md)
    * [6.2 Resources](72_resources.md)
 * 7 ES6/7
    * 7.1 export, import
