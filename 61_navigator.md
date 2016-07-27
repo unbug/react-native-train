@@ -43,7 +43,9 @@ class App extends Component {
 
 3.forward & back
 
-![](QQ20160727-1.png)
+![](QQ20160727-2.png)
+
+
 
 ```
 ...
@@ -62,6 +64,8 @@ class App extends Component {
   }
 ...
 ```
+![](QQ20160727-1.png)
+
 
 4.onDidFocus & onWillFocus
 
