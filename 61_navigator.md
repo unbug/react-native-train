@@ -41,27 +41,27 @@ class App extends Component {
 }
 ```
 
-3.Navigate forward to a new scene
+3.forward & back
 
 ```
 ...
   handleEdit = ()=>{
+    //Navigate forward to a new scene
     this.props.navigator.push({name: 'EditView', data: this.props.data});
   }
 ...
 ```
 
-4.Transition back and unmount the current scene
-
 ```
 ...
   close = ()=>{
+    //Transition back and unmount the current scene
     this.props.navigator.pop();
   }
 ...
 ```
 
-5.onDidFocus & onWillFocus
+4.onDidFocus & onWillFocus
 
 ```
 ...
