@@ -31,7 +31,7 @@
    * [5.1 Fetch](51_fetch.md)
    * [5.2 Persistent](52_persistent.md)
    * [5.3 Resources](53_resources.md)
-* 6 Animations
+* 6 Router
    * 6.1 Navigator Scene Transitions
    * [6.2 Resources](72_resources.md)
 * 7 ES6/7
