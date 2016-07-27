@@ -34,14 +34,6 @@
 * [6 Router](6_router.md)
    * [6.1 Navigator](61_navigator.md)
    * [6.2 Resources](72_resources.md)
-* 7 ES6/7
-   * 7.1 export, import
-   * 7.2 let, const
-   * 7.3 function, class
-   * 7.4  array, string, spread, rest, destructuring
-   * 7.5 this, bind, =>
-   * 7.6 Promise
-   * [7.7 Resources](77_resources.md)
 * [8 Native Modules](7_native_modules.md)
    * [8.1 iOS](71_ios.md)
        * 8.1.1 JS call OC
