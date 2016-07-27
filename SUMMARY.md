@@ -47,7 +47,7 @@
 * [8 Integration](8_integration.md)
    * [8.1 iOS](81_ios.md)
        * [8.1.1 Package](911_package.md)
-       * [9.1.2 Image](912_image.md)
+       * [8.1.2 Image](912_image.md)
    * [9.2 Android](82_android.md)
        * [9.2.1 Package](921_package.md)
        * 9.2.2 Image
