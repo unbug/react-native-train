@@ -54,7 +54,7 @@
    * [8.3 Before publishing](83_before_publishing.md)
    * [8.4 Resources](83_resources.md)
 * 9 Hot Update
-   * 10.1 iOS
+   * 9.1 iOS
    * 10.2 Android
    * [10.3 Resources](93_resources.md)
 * [Resources](resources.md)
