@@ -37,7 +37,7 @@
 * 7 ES6/7
    * 7.1 export, import
    * 7.2 let, const
-   * 7.3 function, extends
+   * 7.3 function, class
    * 7.4 map, array, string, spread operator, destructuring assignment
    * 7.5 this, bind, =>
    * 7.6 Promise
