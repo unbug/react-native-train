@@ -1,4 +1,4 @@
-# 101_shouldComponentUpdate.md
+# 10.1 shouldComponentUpdate
 
 This chapter can be applied to all react apps.
 ## shouldComponentUpdate
@@ -16,7 +16,7 @@ In demo1, when click button, it will set same state, but render times will still
 
 In demo2, we check the value of name is equal to before or not, if equal return false, then we reduce the times of render function.
 
-But if our states structure is complicated, such as `{ a: { b: c: [1, 2, 3] }}`, we have to compare them deeply. This is obviously against the rules we mentioned above, ** keep shouldComponentUpdate simple**
+But if our states structure is complicated, such as `{ a: { b: { c: [1, 2, 3] }}}`, we have to compare them deeply. This is obviously against the rules we mentioned above, ** keep shouldComponentUpdate simple**
 
 
 ## Immutable-js
