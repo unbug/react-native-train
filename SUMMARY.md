@@ -58,6 +58,6 @@
    * 9.2 Android
    * [9.3 Resources](93_resources.md)
 * 10 Performance
-   * 10.1 Resources
+   * [10.1 Resources](101_resources.md)
 * [Resources](resources.md)
 
