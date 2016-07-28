@@ -59,6 +59,5 @@
    * [9.3 Resources](93_resources.md)
 * 10 Performance
    * [10.1 Resources](101_resources.md)
-       * 101_ShouldComponentUpdate.md
 * [Resources](resources.md)
 
