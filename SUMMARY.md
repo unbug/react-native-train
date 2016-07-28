@@ -57,7 +57,7 @@
    * 9.1 iOS
    * 9.2 Android
    * [9.3 Resources](93_resources.md)
-* [Resources](resources.md)
 * 10 Performance
    * 10.1 Resources
+* [Resources](resources.md)
 
