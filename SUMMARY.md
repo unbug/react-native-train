@@ -59,4 +59,5 @@
    * [9.3 Resources](93_resources.md)
 * [Resources](resources.md)
 * 10 Performance
+   * 10.1 Resources
 
