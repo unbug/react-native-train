@@ -1,5 +1,6 @@
 # 10.1 shouldComponentUpdate
 
+
 This chapter can be applied to all react apps.
 ## shouldComponentUpdate
 
