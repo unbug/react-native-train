@@ -57,7 +57,7 @@
    * 9.1 iOS
    * 9.2 Android
    * [9.3 Resources](93_resources.md)
-* 10 Performance
+* 10 Performance (draft)
    * [10.1 shouldComponentUpdate](101_shouldcomponentupdate_md.md)
    * [10.2 Resources](101_resources.md)
 * [Resources](resources.md)
