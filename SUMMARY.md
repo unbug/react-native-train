@@ -34,7 +34,7 @@
 * [6 Router](6_router.md)
    * [6.1 Navigator](61_navigator.md)
    * [6.2 Resources](72_resources.md)
-* [7 Native Modules](7_native_modules.md)
+* [7 Native Modules (draft)](7_native_modules.md)
    * [7.1 iOS](71_ios.md)
        * 7.1.1 JS call OC
        * 7.1.2 OC call JS
