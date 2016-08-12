@@ -53,7 +53,7 @@
        * 8.2.2 Image
    * [8.3 Before publishing](83_before_publishing.md)
    * [8.4 Resources](83_resources.md)
-* 9 Hot Update
+* 9 Hot Update (draft)
    * 9.1 iOS
    * 9.2 Android
    * [9.3 Resources](93_resources.md)
