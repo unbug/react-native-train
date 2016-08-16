@@ -8,3 +8,8 @@ The videos are here ([YouTube](https://www.youtube.com/playlist?list=PLC_rYRxEnw
 
 
 Please [leave a message](https://www.gitbook.com/book/unbug/react-native-training/discussions) or contact [@unbug](https://github.com/unbug) for further enquiries.We are [working on it](https://www.gitbook.com/book/unbug/react-native-training/details).Any help will be appreciated :)
+
+Buy me a drink:
+
+![](zhifubao.png)
+
