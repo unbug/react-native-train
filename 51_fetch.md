@@ -2,7 +2,7 @@
 
 1.apply [redux-thunk](https://github.com/gaearon/redux-thunk) middleware
 
-```
+```javascript
 import { applyMiddleware, createStore, compose } from 'redux';
 import thunk from 'redux-thunk';
 import createLogger from 'redux-logger';
@@ -19,13 +19,13 @@ export default function configureStore() {
 
 2.start & end action types
 
-```
+```javascript
 //todo action types
 export const START_FETCH_ALL_TODOS = 'START_FETCH_ALL_TODOS';
 export const FETCH_ALL_TODOS = 'FETCH_ALL_TODOS';
 ```
 3.fetch flow
-```
+```javascript
 import * as types from '../constants/ActionTypes';
 import * as APIs from '../constants/ServerAPIs';
 
@@ -64,7 +64,7 @@ export function fetchAllTodos() {
 
 4.reducer
 
-```
+```javascript
 export default function todos(state = initialState, action) {
   switch (action.type) {
     case types.START_FETCH_ALL_TODOS:
@@ -88,7 +88,7 @@ export default function todos(state = initialState, action) {
 ```
 5.dispatch & render
 
-```
+```javascript
 ...
   componentDidMount(){
     //fetch data from server
