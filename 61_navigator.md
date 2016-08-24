@@ -2,7 +2,7 @@
 
 1.define routes
 
-```
+```javascript
 
 import MainTabsView from './MainTabsView';
 import EditView from './EditView';
@@ -13,7 +13,7 @@ const ROUTES = { MainTabsView,  BroswerView, EditView };
 
 2.config Navigator
 
-```
+```javascript
 class App extends Component {
   renderScene = (route, navigator) => {
     let Scene = ROUTES[route.name];
@@ -47,7 +47,7 @@ class App extends Component {
 
 
 
-```
+```javascript
 ...
   handleEdit = ()=>{
     //Navigate forward to a new scene
@@ -56,7 +56,7 @@ class App extends Component {
 ...
 ```
 
-```
+```javascript
 ...
   close = ()=>{
     //Transition back and unmount the current scene
@@ -69,7 +69,7 @@ class App extends Component {
 
 4.onDidFocus & onWillFocus
 
-```
+```javascript
 ...
 componentDidMount(){
     this.currentRoute = this.props.navigator.navigationContext.currentRoute;
