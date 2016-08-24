@@ -2,7 +2,7 @@
 
 1.pass styles as props
 
-```
+```javascript
 class InheritanceStyle extends Component {
   render() {
     return (
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
 
 BaseStyles.js
 
-```
+```javascript
 import { StyleSheet,Dimensions } from 'react-native';
 let winSize = Dimensions.get('window');
 const BaseStyles = StyleSheet.create({
@@ -49,7 +49,7 @@ const BaseStyles = StyleSheet.create({
 });
 export default BaseStyles;
 ```
-```
+```javascript
 import BaseStyles from './BaseStyles';
 
 class InheritanceStyle extends Component {
