@@ -1,6 +1,6 @@
 # 2.1 Render & JSX
 
-```
+```javascript
 ..
 ...
 render() {
