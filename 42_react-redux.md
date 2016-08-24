@@ -1,7 +1,7 @@
 # 4.2 [react-redux](https://github.com/reactjs/react-redux)
 1.Actions
 
-```
+```javascript
 import * as  navigationActions from './navigation';
 import * as  todosActions from './todos';
 
@@ -9,7 +9,7 @@ export default {...navigationActions, ...todosActions};
 ```
 
 2.combineReducers()
-```
+```javascript
 import { combineReducers } from 'redux';
 import navigation from './navigation';
 import todos from './todos';
@@ -23,7 +23,7 @@ export default rootReducer;
 ```
 3.Application state by configureStore()
 
-```
+```javascript
 import { createStore } from 'redux';
 import reducers from '../reducers';
 
@@ -36,7 +36,7 @@ export default function configureStore() {
 
 4.mapStateToProps & mapDispatchToProps & bindActionCreators
 
-```
+```javascript
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
@@ -82,7 +82,7 @@ export default connect(
 
 5.Passing the Store with `<Provider/>`
 
-```
+```javascript
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 
