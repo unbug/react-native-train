@@ -12,7 +12,7 @@
 
 ![](QQ20160705-2.png)
 
- ```
+ ```javascript
 const styles = StyleSheet.create({
   container: {
     flex: 1
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
 width = borderLeftWidth(25)+paddingLeft(25)+100+borderRightWidth(25)+paddingRight(25)=200
 
 height = borderTopWidth(25)+paddingTop(25)+100+borderBottomWidth(25)+paddingBottom(25)=200
-```
+```javascript
 class Main extends Component {
   render() {
     return (
