@@ -47,7 +47,7 @@
 
 2.2 HomeView container
 
-```
+```javascript
 import {
   Header,
   Main,
