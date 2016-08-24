@@ -8,7 +8,7 @@
 
 ![](QQ20160623-2.png)
 3.log
-```
+```shell
 console.log('some text');
 console.dir({a:1, b:2, c:3});
 debugger;//breaking point
@@ -31,7 +31,7 @@ Open Atom [Command Palette package](https://atom.io/packages/command-palette) wi
 6.1 Deploy to real device
 `project_name/ios/project_name/AppDelegate.m`
 
-```
+```c
 
   //jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
 
@@ -48,7 +48,7 @@ Open Atom [Command Palette package](https://atom.io/packages/command-palette) wi
 6.2 Debug in real device
 
 `node_modules/react-native/blob/master/Libraries/WebSocket/RCTWebSocketExecutor.m`
-```
+```c
   if (!_url) {
     NSUserDefaults *standardDefaults = [NSUserDefaults standardUserDefaults];
     NSInteger port = [standardDefaults integerForKey:@"websocket-executor-port"] ?: 8081;
