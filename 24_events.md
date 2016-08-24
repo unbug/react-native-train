@@ -4,7 +4,7 @@
 
 1.1.[`<TouchableHighlight/>`](https://facebook.github.io/react-native/docs/touchablehighlight.html)
 
-```
+```javascript
 class Touch extends Component {
   handlePress(){
     console.log('press');
@@ -27,7 +27,7 @@ class Touch extends Component {
 ```
 1.2. [`<TextInput/>`](https://facebook.github.io/react-native/docs/textinput.html)
 
-```
+```javascript
 class Test extends Component {
   //...
   //handle events
@@ -48,7 +48,7 @@ class Test extends Component {
 ```
 1.3.[DeviceEventEmitter](https://kpetrovi.ch/2015/09/30/react-native-ios-keyboard-events.html)
 
-```
+```javascript
 //keyboardWillShow, keyboardDidShow, keyboardWillHide, keyboardDidHide
 //keyboardWillChangeFrame, keyboardDidChangeFrame
 //add the listener
@@ -64,7 +64,7 @@ class Test extends Component {
   2.1 Lifecycle
 ![](QQ20160630-2.png)
  2.2 example
-```
+```javascript
 class Test extends Component {
   /* Capture handles */
   //the responder system bubbles up from the deepest component, 
@@ -148,7 +148,7 @@ class Test extends Component {
 3.[PanResponder](https://facebook.github.io/react-native/docs/panresponder.html)
 
 3.1
-```
+```javascript
 this._panResponder = PanResponder.create({
   // Ask to be the responder:
   onStartShouldSetPanResponder: (evt, gestureState) => true,
