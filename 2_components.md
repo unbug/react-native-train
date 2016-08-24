@@ -1,7 +1,7 @@
 # 2 Components
 1.MyComponent.js
 
-```
+```javascript
 //define component
 class MyComponent extends React.Component {
   render() {
@@ -14,7 +14,7 @@ export default MyComponent;
 
 2.Main.js
 
-```
+```javascript
 //import component
 import MyComponent from './MyComponent';
 class Main extends React.Component {
@@ -26,6 +26,6 @@ class Main extends React.Component {
 ```
 3.AppRegistry
 
-```
+```javascript
 AppRegistry.registerComponent('MyApp', () => Main);
 ```
