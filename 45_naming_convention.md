@@ -3,12 +3,12 @@
 1.Containers & Components
 
 1.1. Container file: 
-```
+```javascript
 src/containers/ModuleNameView.js
 ```
 Component files:
-```
-```
+
+```javascript
 src/components/module-name-view
  - index.js
  - Main.js
@@ -21,7 +21,7 @@ src/components/module-name-view
 
 1.2. Event name: 
 
-```
+```javascript
 handleEventName = ()=>{//todo}
 ...
 <MyComponent onEventName={this.handleEventName}/>
@@ -29,7 +29,7 @@ handleEventName = ()=>{//todo}
 
 1.3. Render methods:
 
-```
+```javascript
   renderMethodName = () => {
    //todo
   }
@@ -43,7 +43,7 @@ handleEventName = ()=>{//todo}
 ````
 1.4. mapStateToProps & mapDispatchToProps
 
-```
+```javascript
 function mapStateToProps(state) {
   return {
     todos: state.todos
@@ -67,12 +67,12 @@ navigation.js
 
 2.1```src/constants/ActionTypes.js```
 
-````
+```javascript
 export const SWITCH_MAIN_TAB = 'SWITCH_MAIN_TAB';
 
-````
-2.2```src/actions/todos.js````
 ```
+2.2```src/actions/todos.js````
+```javascript
 import * as types from '../constants/ActionTypes'
 
 export function addTodo(title, hour) {
@@ -87,7 +87,7 @@ todos.js
 navigation.js
 ```
 3.1.```src/reducers/todos.js```
-```
+```javascript
 import { ADD_TODO, DELETE_TODO, EDIT_TODO, COMPLETE_TODO } from '../constants/ActionTypes'
 const initialState = []
 
@@ -110,7 +110,7 @@ Theme.js
 ```
 4.1```src/styles/Basic.js```
 
-```
+```javascript
 import { StyleSheet, Dimensions } from 'react-native';
 let winSize = Dimensions.get('window');
 const Basic = StyleSheet.create({
@@ -123,7 +123,7 @@ export default Basic;
 ```
 4.2```src/styles/Theme.js```
 
-```
+```javascript
 //colors
 const color = {
   green: '#00551e',
