@@ -5,7 +5,7 @@
 
 ![](QQ20160706-0.png)
 
-```
+```javascript
 class Position extends Component {
   render() {
     return (
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
 
 ![](QQ20160706-2.png)
 
-```
+```javascript
   box2: {
     position: 'absolute',
     top: 80,
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
 
 ![](QQ20160706-1.png)
 
-```
+```javascript
 class Relative extends Component {
   render() {
     return (
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
 
 ![](QQ20160706-3.png)
 
-```
+```javascript
 
 class Fixed extends Component {
   render() {
