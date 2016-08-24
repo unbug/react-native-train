@@ -3,7 +3,7 @@
 1.window size
 
 ![](QQ20160706-4.png)
-```
+```javascript
 let winSize = Dimensions.get('window');
 console.log(winSize);
 class Size extends Component {
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
 
 2.[onLayout](http://facebook.github.io/react-native/releases/0.28/docs/view.html#onlayout)
 
-```
+```javascript
 class Size extends Component {
   handleTextLayout(evt){
     console.log(evt.nativeEvent.layout);
