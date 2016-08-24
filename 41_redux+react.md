@@ -2,7 +2,7 @@
 
 1.[Actions](https://github.com/acdlite/flux-standard-action) & Action Creators
 
-```
+```javascript
 //action type
 const ADD_TODO = 'ADD_TODO';
 
@@ -15,7 +15,7 @@ function addTodoAction(title, hour) {
 ```
 2.[Reducers](http://redux.js.org/docs/basics/Reducers.html)
 
-```
+```javascript
 //a function that accepts an accumulation and a value and returns a new accumulation.
 function todoReducers(state = [], action) {
   switch (action.type) {
@@ -40,7 +40,7 @@ function todoReducers(state = [], action) {
 
 3.Store
 
-```
+```javascript
 import { createStore } from 'redux';
 //1. define store
 let store = createStore(todoReducers);
