@@ -4,7 +4,7 @@
 
 2.apply [redux-persist](https://github.com/rt2zz/redux-persist) middlewear
 
-```
+```javascript
 import { AsyncStorage } from 'react-native';
 import { applyMiddleware, createStore, compose } from 'redux';
 import thunk from 'redux-thunk';
