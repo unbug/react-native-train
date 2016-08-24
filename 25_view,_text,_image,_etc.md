@@ -3,7 +3,7 @@
 1. [Core Components](https://facebook.github.io/react-native/docs/tutorial-core-components.html)
 
 
-```
+```javascript
 ..
 ...
 import {
