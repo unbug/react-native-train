@@ -18,7 +18,7 @@
 2. Lifetime
  - componentWillReceiveProps
  - **shouldComponentUpdate // return true|false**
-   ```
+   ```javascript
    shouldComponentUpdate(nextProps, nextState) {
      return nextProps.id !== this.props.id;
    }
