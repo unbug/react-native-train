@@ -2,7 +2,7 @@
 
 1.Declare Style
 
-```
+```javascript
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
 
 2.Using Styles
 
-```
+```javascript
 class Main extends Component {
   render() {
     return (
