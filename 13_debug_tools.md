@@ -59,8 +59,7 @@ Open Atom [Command Palette package](https://atom.io/packages/command-palette) wi
   if (!_url) {
     NSUserDefaults *standardDefaults = [NSUserDefaults standardUserDefaults];
     NSInteger port = [standardDefaults integerForKey:@"websocket-executor-port"] ?: 8081;
-    //NSString *URLString = [NSString stringWithFormat:@"http://172.28.0.230:%zd/debugger-proxy?role=client", port];
-    NSString *URLString = [NSString stringWithFormat:@"http://localhost:%zd/debugger-proxy?role=client", port];
+    NSString *URLString = [NSString stringWithFormat:@"http://172.28.0.230:%zd/debugger-proxy?role=client", port];
     _url = [RCTConvert NSURL:URLString];
   }
 ```
