@@ -47,7 +47,14 @@ Open Atom [Command Palette package](https://atom.io/packages/command-palette) wi
 ```
 6.2 Debug in real device
 
-`node_modules/react-native/blob/master/Libraries/WebSocket/RCTWebSocketExecutor.m`
+1.`project_name/ios/project_name/AppDelegate.m`
+
+```c
+
+  jsCodeLocation = [NSURL URLWithString:@"http://172.28.0.230:8081/index.ios.bundle?platform=ios&dev=true"];
+```
+
+2.`node_modules/react-native/blob/master/Libraries/WebSocket/RCTWebSocketExecutor.m`
 ```c
   if (!_url) {
     NSUserDefaults *standardDefaults = [NSUserDefaults standardUserDefaults];
@@ -57,3 +64,6 @@ Open Atom [Command Palette package](https://atom.io/packages/command-palette) wi
     _url = [RCTConvert NSURL:URLString];
   }
 ```
+3.
+
+![](QQ20160826-0.png)
