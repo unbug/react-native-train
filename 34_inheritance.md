@@ -1,70 +1,44 @@
 # 3.4 Inheritance
 
-1.pass styles as props
+The style rules themselves will probably seem very familiar to you from CSS, but one thing that works very differently is style inheritance.
+
+By default Components will not inherit any styles. The style property can be a plain object, or it can be an array of styles. The last style has precedence, so that's one thing you can use to avoid style duplication.
 
 ```javascript
-class InheritanceStyle extends Component {
-  render() {
-    return (
-      <View style={this.props.parentColor}>
-      </View>
-    );
-  }
-}
+const paragraphStyle = {
+  color: 'grey',
+  fontSize: 30,
+};
 
-class Main extends Component {
-  handleReady(str){
-    console.log(str);
-  }
-  render() {
-    return (
-      <View style={styles.container}>
-        <InheritanceStyle parentColor={styles.blue}/>
-      </View>
-    );
-  }
+function MyComponent() {
+  return (
+    <Text style={[paragraphStyle, { fontSize: 40}]}>
+      Hello World
+    </Text>
+  );
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  },
-  blue: {
-    flex: 1,
-    backgroundColor: 'blue'
-  }
-});
 ```
 
-2.concatenation styles
+But let's take it a step further than that. Instead of relying on a list of styles, we can use component composition to create styled component primitives.
 
-BaseStyles.js
+Under this approach, instead of using a Text component and adding your styles, you'd import the BodyText component from your styleguide and use that directly. That way your component will have some base styles, but it allows them to be overriden by any styles passed directly as props.
 
-```javascript
-import { StyleSheet,Dimensions } from 'react-native';
-let winSize = Dimensions.get('window');
-const BaseStyles = StyleSheet.create({
-  text: {
-    fontSize: 40/winSize.scale
-  }
-});
-export default BaseStyles;
-```
-```javascript
-import BaseStyles from './BaseStyles';
-
-class InheritanceStyle extends Component {
-  render() {
-    return (
-      <View style={this.props.parentColor}>
-        <Text style={[BaseStyles.text, styles.text]}> this is a long text </Text>
-      </View>
-    );
-  }
+```js
+function BodyText(props) {
+  return <Text ...props style=[paragraphStyle, props.style]>{props.children}</Text>;
 }
-const styles = StyleSheet.create({
-  text:{
-    color: '#ffffff'
-  }
-});
+
+// usage
+
+<BodyText style={{ textAlign: 'center' }} some="value" }>Hello there</BodyText>
+
+// you can also layer these components on each other
+// for example by defining a Heading1 as a BodyText with a larger fontSize
+
+function Heading1(props) {
+  return <BodyText ...props style=[{ fontSize: 40 }, props.style]}>{props.children}</BodyText>;
+}
 ```
-![](QQ20160706-5.png)
+
+
+
