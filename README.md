@@ -8,5 +8,5 @@ The videos are here \([YouTube](https://www.youtube.com/playlist?list=PLC_rYRxEn
 
 Please [leave a message](https://www.gitbook.com/book/unbug/react-native-training/discussions) or twitter [@unbug](https://twitter.com/unbug) for further enquiries. Any help will be appreciated :\)
 
-QQ: **346742896**
+
 
