@@ -1983,8 +1983,7 @@ But the demo works corrcetly, so I decided to copy the build settings of it. And
 
     *2. The version support package matters..
 As react-native Android use many open source projects, if you use some of them already, you should check the version or exclude the from dependencies.  [The list currently](https://github.com/facebook/react-native/blob/master/ReactAndroid/build.gradle) 
-
-    ```
+```
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.android.support:recyclerview-v7:23.0.1'
     compile 'com.facebook.fresco:fresco:0.11.0'
