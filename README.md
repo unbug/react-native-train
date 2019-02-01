@@ -1043,6 +1043,88 @@ class Size extends Component {
 }
 ```
 
+# 3.4 Inheritance
+
+1.pass styles as props
+
+```javascript
+class InheritanceStyle extends Component {
+  render() {
+    return (
+      <View style={this.props.parentColor}>
+      </View>
+    );
+  }
+}
+
+class Main extends Component {
+  handleReady(str){
+    console.log(str);
+  }
+  render() {
+    return (
+      <View style={styles.container}>
+        <InheritanceStyle parentColor={styles.blue}/>
+      </View>
+    );
+  }
+}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  blue: {
+    flex: 1,
+    backgroundColor: 'blue'
+  }
+});
+```
+
+2.concatenation styles
+
+BaseStyles.js
+
+```javascript
+import { StyleSheet,Dimensions } from 'react-native';
+let winSize = Dimensions.get('window');
+const BaseStyles = StyleSheet.create({
+  text: {
+    fontSize: 40/winSize.scale
+  }
+});
+export default BaseStyles;
+```
+
+```javascript
+import BaseStyles from './BaseStyles';
+
+class InheritanceStyle extends Component {
+  render() {
+    return (
+      <View style={this.props.parentColor}>
+        <Text style={[BaseStyles.text, styles.text]}> this is a long text </Text>
+      </View>
+    );
+  }
+}
+const styles = StyleSheet.create({
+  text:{
+    color: '#ffffff'
+  }
+});
+```
+
+![](QQ20160706-5.png)
+
+
+
+# 3.5 Resources
+
+* [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [A Visual Guide to CSS3 Flexbox Properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
+* [Understanding Flex Direction](http://www.standardista.com/understanding-flex-direction/)
+* [DEMO scripts for this chapter](https://github.com/unbug/react-native-train-scripts)
+
 
 
 ---
