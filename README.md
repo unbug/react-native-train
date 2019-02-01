@@ -57,7 +57,7 @@ Please [leave a message](https://www.gitbook.com/book/unbug/react-native-trainin
   * [8.1 iOS](#81-ios)
     * [8.1.1 Package](#811-package)
     * 8.1.2 Image
-  * [8.2 Android]()
+  * [8.2 Android](#82-android)
     * [8.2.1 Package](#821-package)
     * 8.2.2 Image
   * [8.3 Before publishing](#83-before-publishing)
@@ -69,7 +69,7 @@ Please [leave a message](https://www.gitbook.com/book/unbug/react-native-trainin
 * [10 Performance \(draft\)](#10-performance)
   * [10.1 shouldComponentUpdate](#101-shouldcomponentupdate)
   * [10.2 Resources](#102-resources)
-* [Resources]()
+* [Resources](#resources)
 
 ---
 
