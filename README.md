@@ -69,7 +69,7 @@ Please [leave a message](https://www.gitbook.com/book/unbug/react-native-trainin
 * 10 Performance \(draft\)
   * 10.1 shouldComponentUpdate
   * 10.2 Resources
-* Resources
+* [Resources](https://github.com/unbug/react-native-train/blob/master/resources.md)
 
 ---
 
