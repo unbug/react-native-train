@@ -10,17 +10,17 @@ Please [leave a message](https://www.gitbook.com/book/unbug/react-native-trainin
 
 # Table of contents
 
-* 1 First look
-  * 1.1 Building an app in 5 minutes
-  * 1.2 How it works
-  * 1.3 Debug tools
-  * 1.4 DOCs & APIs
-  * 1.5 Resources
-* 2 Components
-  * 2.1 Render & JSX
-  * 2.2 View, Text, Image, etc
-  * 2.3 Lifecyle
-  * 2.4 Props & States
+* [1 First look](https://github.com/unbug/react-native-train/blob/master/chapter1.md)
+  * [1.1 Building an app in 5 minutes](https://github.com/unbug/react-native-train/blob/master/11_building_an_app_in_5_minutes.md)
+  * [1.2 How it works](https://github.com/unbug/react-native-train/blob/master/12_how_it_works.md)
+  * [1.3 Debug tools](https://github.com/unbug/react-native-train/blob/master/13_debug_tools.md)
+  * [1.4 DOCs & APIs](https://github.com/unbug/react-native-train/blob/master/14_docs_%26_apis.md)
+  * [1.5 Resources](https://github.com/unbug/react-native-train/blob/master/15_resources.md)
+* [2 Components](https://github.com/unbug/react-native-train/blob/master/2_components.md)
+  * [2.1 Render & JSX](https://github.com/unbug/react-native-train/blob/master/21_render_%26_jsx.md)
+  * [2.2 View, Text, Image, etc](https://github.com/unbug/react-native-train/blob/master/25_view%2C_text%2C_image%2C_etc.md)
+  * [2.3 Lifecyle](https://github.com/unbug/react-native-train/blob/master/23_lifecyle.md)
+  * [2.4 Props & States](https://github.com/unbug/react-native-train/blob/master/23_states_%26_props.md)
   * 2.5 Events
   * 2.6 Resources
 * 3 Styles
