@@ -10,66 +10,66 @@ Please [leave a message](https://www.gitbook.com/book/unbug/react-native-trainin
 
 # Table of contents
 
-* [1 First look](https://github.com/unbug/react-native-train/blob/master/chapter1.md)
-  * [1.1 Building an app in 5 minutes](https://github.com/unbug/react-native-train/blob/master/11_building_an_app_in_5_minutes.md)
-  * [1.2 How it works](https://github.com/unbug/react-native-train/blob/master/12_how_it_works.md)
-  * [1.3 Debug tools](https://github.com/unbug/react-native-train/blob/master/13_debug_tools.md)
-  * [1.4 DOCs & APIs](https://github.com/unbug/react-native-train/blob/master/14_docs_%26_apis.md)
-  * [1.5 Resources](https://github.com/unbug/react-native-train/blob/master/15_resources.md)
-* [2 Components](https://github.com/unbug/react-native-train/blob/master/2_components.md)
-  * [2.1 Render & JSX](https://github.com/unbug/react-native-train/blob/master/21_render_%26_jsx.md)
-  * [2.2 View, Text, Image, etc](https://github.com/unbug/react-native-train/blob/master/25_view%2C_text%2C_image%2C_etc.md)
-  * [2.3 Lifecyle](https://github.com/unbug/react-native-train/blob/master/23_lifecyle.md)
-  * [2.4 Props & States](https://github.com/unbug/react-native-train/blob/master/23_states_%26_props.md)
-  * 2.5 Events
-  * 2.6 Resources
-* 3 Styles
-  * 3.1 Flexbox
-  * 3.2 Absolute & Relative
-  * 3.3 Size & Dimensions & onLayout
-  * 3.4 Inheritance
-  * 3.5 Resources
-* 4 Architecture
-  * 4.1 Redux
-  * 4.2 react-redux
-  * 4.3 Containers & Components
-  * 4.4 Todo React Native App
-  * 4.5 Naming convention
-  * 4.6 Resources
-* 5 Data
-  * 5.1 Fetch
-  * 5.2 Persistent
-  * 5.3 Resources
-* 6 Router
-  * 6.1 Navigator
-  * 6.2 Resources
-* 7 Native Modules \(draft\)
+* [1 First look](#1-first-look)
+  * [1.1 Building an app in 5 minutes](#11-building-an-app-in-5-minutes)
+  * [1.2 How it works](#12-how-it-works)
+  * [1.3 Debug tools](#13-debug-tools)
+  * [1.4 DOCs & APIs](#14-docs--apis)
+  * [1.5 Resources](#15-resources)
+* [2 Components](#2-components)
+  * [2.1 Render & JSX](#21-render--jsx)
+  * [2.2 View, Text, Image, etc](#22-view-text-image-etc)
+  * [2.3 Lifecyle](#23-lifecyle)
+  * [2.4 Props & States](#24-props--states)
+  * [2.5 Events](#25-events)
+  * [2.6 Resources](#26-resources)
+* [3 Styles](#3-styles)
+  * [3.1 Flexbox](#31-flexbox)
+  * [3.2 Absolute & Relative](#32-absolute--relative)
+  * [3.3 Size & Dimensions & onLayout](#33-size--dimensions--onlayout)
+  * [3.4 Inheritance](#34-inheritance)
+  * [3.5 Resources](#35-resources)
+* [4 Architecture](#4-architecture)
+  * [4.1 Redux](#41-redux)
+  * [4.2 react-redux](#42-react-redux)
+  * [4.3 Containers & Components](#43-containers--components)
+  * [4.4 Todo React Native App](#44-todo-react-native-app)
+  * [4.5 Naming convention](#45-naming-convention)
+  * [4.6 Resources](#46-resources)
+* [5 Data](#5-data)
+  * [5.1 Fetch](#51-fetch)
+  * [5.2 Persistent](#52-persistent)
+  * [5.3 Resources](#53-resources)
+* [6 Router](#6-router)
+  * [6.1 Navigator](#61-navigator)
+  * [6.2 Resources](#62-resources)
+* [7 Native Modules \(draft\)](#7-native-modules)
   * 7.1 iOS
     * 7.1.1 JS call OC
     * 7.1.2 OC call JS
     * 7.1.3 Native View Component
-* * 7.2 Android
+  * 7.2 Android
     * 7.2.1 JS call Java
     * 7.2.2 Java call JS
     * 7.2.3 Native View Component
   * 7.3 Resources
-* 8 Integration \(draft\)
-  * 8.1 iOS
-    * 8.1.1 Package
+* [8 Integration \(draft\)](#8-integration)
+  * [8.1 iOS](#81-ios)
+    * [8.1.1 Package](#811-package)
     * 8.1.2 Image
-  * 8.2 Android
-    * 8.2.1 Package
+  * [8.2 Android]()
+    * [8.2.1 Package](#821-package)
     * 8.2.2 Image
-  * 8.3 Before publishing
-  * 8.4 Resources
-* 9 Hot Update \(draft\)
+  * [8.3 Before publishing](#83-before-publishing)
+  * [8.4 Resources](#83-resources)
+* [9 Hot Update \(draft\)](#9-hot-update-draf)
   * 9.1 iOS
   * 9.2 Android
   * 9.3 Resources
-* 10 Performance \(draft\)
-  * 10.1 shouldComponentUpdate
-  * 10.2 Resources
-* [Resources](https://github.com/unbug/react-native-train/blob/master/resources.md)
+* [10 Performance \(draft\)](#10-performance)
+  * [10.1 shouldComponentUpdate](#101-shouldcomponentupdate)
+  * [10.2 Resources](#102-resources)
+* [Resources]()
 
 ---
 
@@ -1958,6 +1958,55 @@ As react-native Android use many open source projects, if you use some of them a
 ![](integration_android_step5.png)
 
 
+# 8.2 Android
+
+At first I followed the official instruction (which seems very simple) but lots of build or runtime
+error occurs 😂.
+
+Such as:
+
+``` Can't find variable: __fbBatchedBridge (<unknown file>:1)```
+
+```java.lang.UnsatisfiedLinkError: could find DSO to load: libreactnativejni.so```
+
+```android.view.WindowManager$BadTokenException: Unable to add window android.view.ViewRootImpl$W@5d992cf -- permission denied for this window type```
+
+But the demo works corrcetly, so I decided to copy the build settings of it. And finally it works normally on my Nexus 5X. Steps:
+
+- Add the path to the root gradle file,
+![](integration_android_step11.png)
+
+- Modify the app gradle file,
+![](integration_android_step22.png)
+
+    *1. Official demo use this variable to control wheather building different apps for cpus, that will reduce the size of each app, I just ignore it here.
+
+    *2. The version support package matters..
+As react-native Android use many open source projects, if you use some of them already, you should check the version or exclude the from dependencies.  [The list currently](https://github.com/facebook/react-native/blob/master/ReactAndroid/build.gradle) 
+
+    ```
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'com.facebook.fresco:fresco:0.11.0'
+    compile 'com.facebook.fresco:imagepipeline-okhttp3:0.11.0'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.2.3'
+    compile 'com.google.code.findbugs:jsr305:3.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
+    compile 'com.squareup.okhttp3:okhttp-ws:3.2.0'
+    compile 'com.squareup.okio:okio:1.8.0'
+    compile 'org.webkit:android-jsc:r174650'
+```
+- Modify root gradle.properties,
+![](integration_android_step3.png)
+
+- Add proguard rules,
+![](integration_android_step4.png)
+
+- AndroidManifest.xml, you can remove the permission if you don't need debug mode.
+![](integration_android_step5.png)
+
+
 # 8.2.1 Package
 
 ```
@@ -2024,6 +2073,18 @@ In demo3, we click first button several times, times will only plus one time, cl
  - [ShouldComponentUpdate](https://facebook.github.io/react/docs/component-specs.html#updating-shouldcomponentupdate)
  - [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming)
 
+
+# Resources
+
+- [ReactJS](https://facebook.github.io/react/)
+- [React Native](https://facebook.github.io/react-native/)
+- [awesome-react](https://github.com/enaqx/awesome-react)
+- [awesome-react-native](https://github.com/jondot/awesome-react-native)
+- [build with react](http://buildwithreact.com/)
+
+### Books
+ - [Learning React Native](http://shop.oreilly.com/product/0636920041511.do)
+ - [Developing a React Edge](http://shop.oreilly.com/product/9781939902122.do)
 ---
 
 ## Created by [@unbug](https://twitter.com/unbug):
