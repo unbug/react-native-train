@@ -1116,8 +1116,6 @@ const styles = StyleSheet.create({
 
 ![](QQ20160706-5.png)
 
-
-
 # 3.5 Resources
 
 * [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
@@ -1125,7 +1123,20 @@ const styles = StyleSheet.create({
 * [Understanding Flex Direction](http://www.standardista.com/understanding-flex-direction/)
 * [DEMO scripts for this chapter](https://github.com/unbug/react-native-train-scripts)
 
+# 4 Architecture
 
+1.MVC problems
+
+![](QQ20160722-0.png)
+
+2.[Flux](http://facebook.github.io/flux/docs/overview.html)
+
+![](flux-diagram-white-background.png)  
+3.Data flow
+
+![](QQ20160719-1.png)
+
+[Flux TodoMVC Example](https://github.com/facebook/flux/tree/master/examples/flux-todomvc/)
 
 ---
 
