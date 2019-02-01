@@ -8,6 +8,69 @@ The videos are here \([YouTube](https://www.youtube.com/playlist?list=PLC_rYRxEn
 
 Please [leave a message](https://www.gitbook.com/book/unbug/react-native-training/discussions) or twitter [@unbug](https://twitter.com/unbug) for further inquiries. Any help will be appreciated :\)
 
+# Table of contents
+
+* 1 First look
+  * 1.1 Building an app in 5 minutes
+  * 1.2 How it works
+  * 1.3 Debug tools
+  * 1.4 DOCs & APIs
+  * 1.5 Resources
+* 2 Components
+  * 2.1 Render & JSX
+  * 2.2 View, Text, Image, etc
+  * 2.3 Lifecyle
+  * 2.4 Props & States
+  * 2.5 Events
+  * 2.6 Resources
+* 3 Styles
+  * 3.1 Flexbox
+  * 3.2 Absolute & Relative
+  * 3.3 Size & Dimensions & onLayout
+  * 3.4 Inheritance
+  * 3.5 Resources
+* 4 Architecture
+  * 4.1 Redux
+  * 4.2 react-redux
+  * 4.3 Containers & Components
+  * 4.4 Todo React Native App
+  * 4.5 Naming convention
+  * 4.6 Resources
+* 5 Data
+  * 5.1 Fetch
+  * 5.2 Persistent
+  * 5.3 Resources
+* 6 Router
+  * 6.1 Navigator
+  * 6.2 Resources
+* 7 Native Modules \(draft\)
+  * 7.1 iOS
+    * 7.1.1 JS call OC
+    * 7.1.2 OC call JS
+    * 7.1.3 Native View Component
+* * 7.2 Android
+    * 7.2.1 JS call Java
+    * 7.2.2 Java call JS
+    * 7.2.3 Native View Component
+  * 7.3 Resources
+* 8 Integration \(draft\)
+  * 8.1 iOS
+    * 8.1.1 Package
+    * 8.1.2 Image
+  * 8.2 Android
+    * 8.2.1 Package
+    * 8.2.2 Image
+  * 8.3 Before publishing
+  * 8.4 Resources
+* 9 Hot Update \(draft\)
+  * 9.1 iOS
+  * 9.2 Android
+  * 9.3 Resources
+* 10 Performance \(draft\)
+  * 10.1 shouldComponentUpdate
+  * 10.2 Resources
+* Resources
+
 ---
 
 ## Created by [@unbug](https://twitter.com/unbug):
