@@ -206,8 +206,6 @@ Open Atom [Command Palette package](https://atom.io/packages/command-palette) wi
 * [JavaScriptCore](http://trac.webkit.org/wiki/JavaScriptCore)
 * [React Native iOS 真机调试](http://www.jianshu.com/p/cc64bcb58df2)
 
-
-
 # 2 Components
 
 1.MyComponent.js
@@ -435,8 +433,6 @@ const Heading = ({title}) => <Text>{title}</Text>;
 ...
 ..
 ```
-
-
 
 # 2.5 Events
 
@@ -675,8 +671,6 @@ class Main extends Component {
 * [Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
 * [Transform Properties](https://facebook.github.io/react-native/docs/transforms.html#content)
 
-
-
 # 3.1 Flexbox
 
 1.[Flexbox layout](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
@@ -803,8 +797,6 @@ const styles = StyleSheet.create({
 ```
 
 ![](QQ20160705-17.png)
-
-
 
 # 3.2 Absolute & Relative
 
@@ -995,7 +987,61 @@ const styles = StyleSheet.create({
 });
 ```
 
+# 3.3 Size & Dimensions & onLayout
 
+1.window size
+
+![](QQ20160706-4.png)
+
+```javascript
+let winSize = Dimensions.get('window');
+console.log(winSize);
+class Size extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.block}/>
+        <Text style={styles.text}>some text</Text>
+      </View>
+    );
+  }
+}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'flex-start'
+  },
+  block: {
+    height: 100,
+    width: winSize.width,
+    backgroundColor: 'red'
+  },
+  text: {
+    color: '#ffffff',
+    fontSize: 40/winSize.scale,
+    backgroundColor: 'blue'
+  }
+});
+```
+
+2.[onLayout](http://facebook.github.io/react-native/releases/0.28/docs/view.html#onlayout)
+
+```javascript
+class Size extends Component {
+  handleTextLayout(evt){
+    console.log(evt.nativeEvent.layout);
+  }
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.block}/>
+        <Text style={styles.text}
+          onLayout={this.handleTextLayout}>some text</Text>
+      </View>
+    );
+  }
+}
+```
 
 
 
