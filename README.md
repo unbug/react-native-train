@@ -93,6 +93,7 @@ Please [leave a message](https://www.gitbook.com/book/unbug/react-native-trainin
    react-native init testRn
    ```
 3. Build & run project
+
    ```shell
    react-native run-ios
    ```
@@ -108,8 +109,6 @@ npm start
 //or
 react-native start
 ```
-
-
 
 # 1.2 How it works
 
@@ -191,6 +190,812 @@ Open Atom [Command Palette package](https://atom.io/packages/command-palette) wi
 3.
 
 ![](QQ20160826-0.png)
+
+# 1.4 DOCs & APIs
+
+* [ReactJS](https://facebook.github.io/react/docs/getting-started.html)
+* [React Native](https://facebook.github.io/react-native/docs/getting-started.html)
+* [Nuclide](https://nuclide.io/docs/quick-start/getting-started/)
+
+# 1.5 Resources
+
+* [React Native: Bringing modern web techniques to mobile](https://code.facebook.com/posts/1014532261909640/react-native-bringing-modern-web-techniques-to-mobile/)
+* [React Native通信机制详解](http://blog.cnbang.net/tech/2698/)
+* [React Native 调研报告](http://blog.csdn.net/lihuiqwertyuiop/article/details/45241909)
+* [React Native概述：背景、规划和风险](https://github.com/tmallfe/tmallfe.github.io/issues/18)
+* [JavaScriptCore](http://trac.webkit.org/wiki/JavaScriptCore)
+* [React Native iOS 真机调试](http://www.jianshu.com/p/cc64bcb58df2)
+
+
+
+# 2 Components
+
+1.MyComponent.js
+
+```javascript
+//define component
+class MyComponent extends React.Component {
+  render() {
+    return <Text>My component!</Text>;
+  }
+}
+//export component
+export default MyComponent;
+```
+
+2.Main.js
+
+```javascript
+//import component
+import MyComponent from './MyComponent';
+class Main extends React.Component {
+  render() {
+    //use component
+    return <MyComponent>;
+  }
+}
+```
+
+3.AppRegistry
+
+```javascript
+AppRegistry.registerComponent('MyApp', () => Main);
+```
+
+# 2.1 Render & JSX
+
+```javascript
+..
+...
+render() {
+  const txt = 'Hello';
+  function say(name){
+    return 'I am '+name;
+  }
+  return (
+    <View>
+      <Text>This is a title!</Text>
+      <Text>{txt}</Text>
+      <View>
+        <Text>{say('React')}</Text>
+      </View>
+    </View>
+  );
+}
+..
+...
+```
+
+# 2.2 View, Text, Image, etc
+
+1. [Core Components](https://facebook.github.io/react-native/docs/tutorial-core-components.html)
+
+```javascript
+..
+...
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image
+} from 'react-native';
+
+class Main extends Component {
+  render() {
+    return (
+      <View>
+        <Image source={require('./img/bg.png')}>
+          <Image source={require('./img/icon.png')}/>
+          <Text>
+            some text!
+          </Text>
+        </Image>
+      </View>
+    );
+  }
+}
+```
+
+# 2.3 Lifecyle
+
+1. Instantiation
+
+   1.1 The lifecycle methods that are called the first time an instance is created
+
+   * getDefaultProps
+   * **getInitialState**
+   * componentWillMount
+   * **render**
+   * **componentDidMount**
+
+   1.2 For all subsequent uses of that component class:
+
+   * getInitialState
+   * componentWillMount
+   * render
+   * componentDidMount”
+
+2. Lifetime
+
+   * componentWillReceiveProps
+   * **shouldComponentUpdate // return true\|false**
+     ```javascript
+     shouldComponentUpdate(nextProps, nextState) {
+     return nextProps.id !== this.props.id;
+     }
+     ```
+   * componentWillUpdate //not called for the initial render
+   * render
+   * componentDidUpdate
+
+3. Teardown & cleanup
+
+   * componentWillUnmount
+
+![](QQ20160627-0.png)
+
+# 2.4 Props & States
+
+1.props: properties are passed to a component and can hold any data
+
+```javascript
+class User extends Component {
+  render(){
+    const user = this.props.data;
+    this.props.onReady('I am ready!');
+    return(
+      <View>
+        <Text>
+          score: {this.props.score}
+          type: {this.props.type}
+          Name: {user.name}
+          Age: {user.age}
+        </Text>
+      </View>
+    );
+  }
+}
+//dufaultProps
+User.propTypes = { score: React.PropTypes.number };
+User.defaultProps = { score: 0 };
+
+var user = {name: 'foo', age: 21};
+class Main extends Component {
+  handleReady(str){
+    console.log(str);
+  }
+  render(){
+    return(
+      <View>
+        <User type="Dev" data={user} onReady={this.handleReady}/>
+      </View>
+    );
+  }
+}
+```
+
+2.state: State differs from props in that it is internal to the component.
+
+```javascript
+class Timer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {count: 0};
+  }
+
+  componentDidMount() {
+    let that = this;
+    setInterval(function () {
+      that.increase();
+    }, 1000);
+  }
+
+  increase() {
+    this.setState({count: this.state.count + 1});
+  }
+
+  render() {
+    return (
+      <View>
+        <Text>count: {this.state.count}</Text>
+      </View>
+    );
+  }
+}
+
+class Main extends Component {
+  render(){
+    return(
+      <View>
+        <Timer/>
+      </View>
+    );
+  }
+}
+```
+
+3._props_ VS _state_
+
+* Use props to pass data and settings through the component tree.
+* Never modify this.props inside of a component; consider props immutable.
+* Use props to for event handlers to communicate with child components.
+* Use state for storing simple view state like wether or not drop-down options are visible.
+* Never modify this.state directly, use this.setstate instead.
+
+![](QQ20160702-0.png)
+
+4.Stateless Component
+
+```javascript
+const Heading = ({title}) => <Text>{title}</Text>;
+
+..
+...
+<Heading title="test title"/>
+...
+..
+```
+
+
+
+# 2.5 Events
+
+1.Basic events
+
+1.1.[`<TouchableHighlight/>`](https://facebook.github.io/react-native/docs/touchablehighlight.html)
+
+```javascript
+class Touch extends Component {
+  handlePress(){
+    console.log('press');
+  }
+  handleLongPress(){
+    console.log('longPress');
+  }
+  render() {
+    return (
+      <TouchableHighlight
+        onPress={this.handlePress}
+        onLongPress={this.handleLongPress}>
+        <View>
+          <Text>Press me!</Text>
+        </View>
+      </TouchableHighlight>
+    );
+  }
+}
+```
+
+1.2. [`<TextInput/>`](https://facebook.github.io/react-native/docs/textinput.html)
+
+```javascript
+class Test extends Component {
+  //...
+  //handle events
+  //...
+  render() {
+    return (
+      <TextInput 
+        onBlur={...}
+        onChange={...}
+        onEndEditing={...}
+        onSelectionChange={...}
+        onSubmitEditing={...}
+      </TextInput>
+    );
+  }
+}
+```
+
+1.3.[DeviceEventEmitter](https://kpetrovi.ch/2015/09/30/react-native-ios-keyboard-events.html)
+
+```javascript
+//keyboardWillShow, keyboardDidShow, keyboardWillHide, keyboardDidHide
+//keyboardWillChangeFrame, keyboardDidChangeFrame
+//add the listener
+ var listener = DeviceEventEmitter.addListener('keyboardWillShow', (e) =>{
+   console.log('Event is fired!');
+ });
+ //remove the listener
+ listener.remove();
+```
+
+2.[Gesture Responder System](https://facebook.github.io/react-native/docs/gesture-responder-system.html#responder-lifecycle)
+
+2.1 Lifecycle  
+![](QQ20160630-2.png)  
+ 2.2 example
+
+```javascript
+class Test extends Component {
+  /* Capture handles */
+  //the responder system bubbles up from the deepest component, 
+  //a parent View wants to prevent the child from becoming responder on a touch start
+  handleStartShouldSetResponderCapture(evt){
+    return true;
+  }
+  //the responder system bubbles up from the deepest component, 
+  //a parent View wants to prevent the child from becoming responder on a touch move
+  handleMoveShouldSetResponderCapture(evt){
+    return true;
+  }
+
+  /* Lifecycle handles */
+  //Does this view want to become responder on the start of a touch?
+  handleStartShouldSetResponder(evt){
+    return true;
+  }
+  //Called for every touch move on the View when it is not the responder: 
+  //does this view want to "claim" touch responsiveness?
+  handleMoveShouldSetResponder(evt){
+    return true;
+  }
+  //The View is now responding for touch events. 
+  handleResponderGrant(evt){
+    console.log('you are touching me');
+  }
+  //Something else is the responder right now and will not release it
+  handleResponderReject(evt){
+    console.log('please wait in line');
+  }
+
+  /* event handles */
+  //touch move
+  handleResponderMove(evt){
+    console.log('touch move at:', 'X='+evt.pageX, 'Y='+evt.pageY);
+  }
+  //touch end/up
+  handleResponderRelease(evt){
+    console.log('touch end');
+  }
+  //Something else wants to become responder. Should this view release the responder?
+  handleResponderTerminationRequest(evt){
+    return true;
+  }
+  //touch cancel
+  handleResponderTerminate(evt){
+    console.log('touch canceled');
+  }
+  render() {
+    return (
+      <View 
+        onStartShouldSetResponderCapture={this.handleStartShouldSetResponderCapture}
+        onMoveShouldSetResponderCapture={this.handleMoveShouldSetResponderCapture}
+        onStartShouldSetResponder={this.handleStartShouldSetResponder}
+        onMoveShouldSetResponder={this.handleMoveShouldSetResponder}
+        onResponderGrant={this.handleResponderGrant} 
+        onResponderReject={this.handleResponderReject}
+        onResponderMove={this.handleResponderMove}
+        onResponderRelease={this.handleResponderRelease}
+        onResponderTerminationRequest={this.handleResponderTerminationRequest}
+        onResponderTerminate={this.handleResponderTerminate}>
+          <Text>Press me!</Text>
+      </View>
+    );
+  }
+}
+```
+
+2.3 evt is a synthetic touch event with the following form nativeEvent:
+
+* changedTouches - Array of all touch events that have changed since the last event
+* identifier - The ID of the touch
+* locationX - The X position of the touch, relative to the element
+* locationY - The Y position of the touch, relative to the element
+* pageX - The X position of the touch, relative to the root element
+* pageY - The Y position of the touch, relative to the root element
+* target - The node id of the element receiving the touch event
+* timestamp - A time identifier for the touch, useful for velocity calculation
+* touches - Array of all current touches on the screen
+
+3.[PanResponder](https://facebook.github.io/react-native/docs/panresponder.html)
+
+3.1
+
+```javascript
+this._panResponder = PanResponder.create({
+  // Ask to be the responder:
+  onStartShouldSetPanResponder: (evt, gestureState) => true,
+  onStartShouldSetPanResponderCapture: (evt, gestureState) => true,
+  onMoveShouldSetPanResponder: (evt, gestureState) => true,
+  onMoveShouldSetPanResponderCapture: (evt, gestureState) => true,
+  //touch start
+  onPanResponderGrant: (evt, gestureState) => {},
+  //touch move
+  onPanResponderMove: (evt, gestureState) => {},
+  onPanResponderTerminationRequest: (evt, gestureState) => true,
+  //touch end/up
+  onPanResponderRelease: (evt, gestureState) => {},
+  //touch cancel
+  onPanResponderTerminate: (evt, gestureState) => {},
+  onShouldBlockNativeResponder: (evt, gestureState) => true,
+});
+```
+
+3.2 A gestureState object has the following:
+
+* stateID - ID of the gestureState- persisted as long as there at least one touch on screen
+* moveX - the latest screen coordinates of the recently-moved touch
+* moveY - the latest screen coordinates of the recently-moved touch
+* x0 - the screen coordinates of the responder grant
+* y0 - the screen coordinates of the responder grant
+* dx - accumulated distance of the gesture since the touch started
+* dy - accumulated distance of the gesture since the touch started
+* vx - current velocity of the gesture
+* vy - current velocity of the gesture
+* numberActiveTouches - Number of touches currently on screen
+
+3.3 [PanResponder example in UIExplorer](https://github.com/facebook/react-native/blob/master/Examples/UIExplorer/PanResponderExample.js)
+
+# 2.6 Resources
+
+* [react.parts](https://react.parts/native)
+* [js.coach](https://js.coach/)
+* [props vs state](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
+* [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
+* [JSX in Depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
+* [DEMO scripts for this chapter](https://github.com/unbug/react-native-train-scripts)
+
+# 3 Styles
+
+1.Declare Style
+
+```javascript
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'blue',
+  },
+  text: {
+    fontSize: 14,
+    color: 'red'
+  }
+});
+```
+
+2.Using Styles
+
+```javascript
+class Main extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.text}>I am red.</Text>
+      </View>
+    );
+  }
+}
+```
+
+3.Properties
+
+* [View Properties](https://facebook.github.io/react-native/docs/view.html#style)
+* [Image Properties](https://facebook.github.io/react-native/docs/image.html#style)
+* [Text Properties](https://facebook.github.io/react-native/docs/text.html#style)
+* [Flex Properties](https://facebook.github.io/react-native/docs/flexbox.html#content)
+* [Transform Properties](https://facebook.github.io/react-native/docs/transforms.html#content)
+
+
+
+# 3.1 Flexbox
+
+1.[Flexbox layout](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+> The main idea behind the flex layout is to give the container the ability to alter its items' width/height \(and order\) to best fill the available space \(mostly to accommodate to all kind of display devices and screen sizes\). A flex container expands items to fill available free space, or shrinks them to prevent overflow.
+
+![](QQ20160705-15.png)
+
+2.flex:1
+
+![](QQ20160705-2.png)
+
+```javascript
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  header: {
+    height: 200,
+    backgroundColor: 'red'
+  },
+  main: {
+    flex: 1,
+    backgroundColor: 'blue'
+  },
+  footer: {
+    height: 200,
+    backgroundColor: 'green'
+  },
+  text: {
+    color: '#ffffff',
+    fontSize: 80
+  }
+});
+```
+
+3.flexDirection:'row'\|'column'
+
+![](QQ20160705-7.png)
+
+![](QQ20160705-8.png)
+
+4.justifyContent:'flex-start'\|'flex-end'\|'center'\|'space-between'\|'space-around'
+
+![](QQ20160705-10.png)
+
+5.alignItems:'flex-start'\|'flex-end'\|'center'\|'stretch'
+
+![](QQ20160705-12.png)
+
+6.alignSelf:'auto'\|'flex-start'\|'flex-end'\|'center'\|'stretch'
+
+![](QQ20160705-13.png)
+
+7.flexWrap:'wrap'\|'nowrap'
+
+![](QQ20160705-14.png)
+
+8.Box model
+
+![](QQ20160705-16.png)
+
+width = borderLeftWidth\(25\)+paddingLeft\(25\)+100+borderRightWidth\(25\)+paddingRight\(25\)=200
+
+height = borderTopWidth\(25\)+paddingTop\(25\)+100+borderBottomWidth\(25\)+paddingBottom\(25\)=200
+
+```javascript
+class Main extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.header}>
+          <Text style={styles.text}>200X100</Text>
+        </View>
+        <View style={styles.main}>
+          <View  style={styles.mainContent}>
+            <Text style={styles.text}>100X100</Text>
+          </View>
+        </View>
+        <View style={styles.footer}>
+          <Text style={styles.text}>200X100</Text>
+        </View>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  header: {
+    height: 100,
+    width: 200,
+    backgroundColor: 'red'
+  },
+  main: {
+    height: 200,
+    width: 200,
+    padding: 25,
+    borderWidth: 25,
+    borderColor: 'black',
+    margin: 25,
+    backgroundColor: 'blue'
+  },
+  mainContent: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'red'
+  },
+  footer: {
+    height: 100,
+    width: 200,
+    backgroundColor: 'green'
+  },
+  text: {
+    color: '#ffffff',
+    fontSize: 20
+  }
+});
+```
+
+![](QQ20160705-17.png)
+
+
+
+# 3.2 Absolute & Relative
+
+1.absolute
+
+![](QQ20160706-0.png)
+
+```javascript
+class Position extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.box1}>
+          <Text style={styles.text}>1</Text>
+        </View>
+        <View style={styles.box2}>
+          <Text style={styles.text}>2</Text>
+        </View>
+        <View style={styles.box3}>
+          <Text style={styles.text}>3</Text>
+        </View>
+      </View>
+    );
+  }
+}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  box1: {
+    position: 'absolute',
+    top: 40,
+    left: 40,
+    width: 100,
+    height: 100,
+    backgroundColor: 'red'
+  },
+  box2: {
+    position: 'absolute',
+    top: 80,
+    left: 80,
+    width: 100,
+    height: 100,
+    backgroundColor: 'blue'
+  },
+  box3: {
+    position: 'absolute',
+    top: 120,
+    left: 120,
+    width: 100,
+    height: 100,
+    backgroundColor: 'green'
+  },
+  text: {
+    color: '#ffffff',
+    fontSize: 80
+  }
+});
+```
+
+2.zIndex, [v0.29](https://github.com/facebook/react-native/commit/d64368b9e239b574039f4a6508bf2aeb0806121b) or [transform](http://facebook.github.io/react-native/docs/transforms.html)
+
+![](QQ20160706-2.png)
+
+```javascript
+  box2: {
+    position: 'absolute',
+    top: 80,
+    left: 80,
+    width: 100,
+    height: 100,
+    backgroundColor: 'blue',
+    transform: [{'translate': [0,0, 1]}]
+  },
+```
+
+3.relative\(default\)
+
+![](QQ20160706-1.png)
+
+```javascript
+class Relative extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.box1}>
+          <Text style={styles.text}>1</Text>
+          <View style={styles.ball}/>
+        </View>
+        <View style={styles.box2}>
+          <Text style={styles.text}>2</Text>
+        </View>
+      </View>
+    );
+  }
+}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  box1: {
+    position: 'relative',
+    top: 40,
+    left: 40,
+    width: 100,
+    height: 100,
+    backgroundColor: 'red'
+  },
+  box2: {
+    position: 'absolute',
+    top: 100,
+    left: 100,
+    width: 100,
+    height: 100,
+    backgroundColor: 'blue'
+  },
+  ball: {
+    position: 'absolute',
+    top: 40,
+    left: 40,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: 'yellow'
+  },
+  text: {
+    color: '#ffffff',
+    fontSize: 80
+  }
+});
+```
+
+4.fixed
+
+![](QQ20160706-3.png)
+
+```javascript
+class Fixed extends Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.tbar}>
+          <Text style={styles.text}>Fixed top bar</Text>
+        </View>
+        <ScrollView style={styles.main}>
+          <View style={styles.item}><Text style={styles.text}>1</Text></View>
+          <View style={styles.item}><Text style={styles.text}>2</Text></View>
+          <View style={styles.item}><Text style={styles.text}>3</Text></View>
+        </ScrollView>
+        <View style={styles.bbar}>
+          <Text style={styles.text}>Fixed bottom bar</Text>
+        </View>
+      </View>
+    );
+  }
+}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+  tbar: {
+    width: 375,
+    height: 100,
+    borderBottomWidth: 5,
+    borderColor: 'black',
+    backgroundColor: 'red'
+  },
+  main: {
+    flex: 1
+  },
+  item: {
+    height: 200,
+    width: 375,
+    marginTop: 10,
+    backgroundColor: 'green'
+  },
+  bbar: {
+    width: 375,
+    height: 100,
+    borderTopWidth: 5,
+    borderColor: 'black',
+    backgroundColor: 'red'
+  },
+  text: {
+    color: '#ffffff',
+    fontSize: 40
+  }
+});
+```
+
+
 
 
 
