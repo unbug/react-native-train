@@ -1740,10 +1740,289 @@ export default function configureStore() {
  - [Redux Async Actions](http://redux.js.org/docs/advanced/AsyncActions.html)
  - [Todo React Native App](https://github.com/unbug/TodoRN)
  
+ # 6 Router
+
+ - [NavigatorIOS](https://facebook.github.io/react-native/docs/navigatorios.html)
+ - [Navigator](https://facebook.github.io/react-native/docs/navigator.html)
  
  
+ # 6.1 Navigator
+
+1.define routes
+
+```javascript
+
+import MainTabsView from './MainTabsView';
+import EditView from './EditView';
+import BroswerView from './BroswerView';
+
+const ROUTES = { MainTabsView,  BroswerView, EditView };
+```
+
+2.config Navigator
+
+```javascript
+class App extends Component {
+  renderScene = (route, navigator) => {
+    let Scene = ROUTES[route.name];
+    return <Scene {...route} navigator={navigator}/>;
+  }
+  configureScene = (route, routeStack) => {
+    switch (route.name){
+      case 'EditView':
+        return Navigator.SceneConfigs.FloatFromBottom;
+      default:
+        return Navigator.SceneConfigs.PushFromRight;
+    }
+  }
+  render() {
+    return (
+      <View style={styles.container}>
+        <StatusBar barStyle="light-content"/>
+        <Navigator
+          initialRoute={{name: 'MainTabsView'}}
+          renderScene={this.renderScene}
+          configureScene={this.configureScene}/>
+      </View>
+    )
+  }
+}
+```
+
+3.forward & back
+
+![](QQ20160727-2.png)
 
 
+
+```javascript
+...
+  handleEdit = ()=>{
+    //Navigate forward to a new scene
+    this.props.navigator.push({name: 'EditView', data: this.props.data});
+  }
+...
+```
+
+```javascript
+...
+  close = ()=>{
+    //Transition back and unmount the current scene
+    this.props.navigator.pop();
+  }
+...
+```
+![](QQ20160727-1.png)
+
+
+4.onDidFocus & onWillFocus
+
+```javascript
+...
+componentDidMount(){
+    this.currentRoute = this.props.navigator.navigationContext.currentRoute;
+    this.bindEvents();
+  }
+  componentWillUnmount(){
+    this.unBindEvents();
+  }
+  bindEvents = ()=>{
+    this.willFocusSubscription  = this.props.navigator.navigationContext.addListener('willfocus', (event) => {
+      if (this.currentRoute !== event.data.route) {
+        this.setState({isVisible: false});
+      }
+    });
+    this.didFocusSubscription  = this.props.navigator.navigationContext.addListener('didfocus', (event) => {
+      if (this.currentRoute === event.data.route) {
+        this.setState({isVisible: true});
+      }
+    });
+  }
+  unBindEvents = ()=>{
+    this.willFocusSubscription.remove();
+    this.didFocusSubscription.remove();
+  }
+...
+```
+
+# 6.2 Resources
+
+- [Routing and Navigation in React Native](http://blog.paracode.com/2016/01/05/routing-and-navigation-in-react-native/)
+
+
+# 7 Native Modules
+
+Somewhere in your RN codes, insert: 
+
+```console.log(__fbBatchedBridge);```
+
+then in your debugger (http://localhost:8081/debugger-ui) you'll see something like below,
+
+![](native_modules_screenshot.png)
+that's what we're going to talk about in this chapter.
+
+
+# 8 Integration
+
+Most of the time we are not starting a new app, we just want to use react-native to develop some new features, so integration should be a necessary skill for react-native developers.
+
+Assume that you have create some features in the AwesomeProject, you want to create an exactly same environment for your current project.
+
+![](integrationdemo.png)
+
+**Notice that** version is very important after your app published. If you want to upgrade react-native and package codes, that almost means you don't want to maintain the old version any longer. 
+
+
+# 8.1 iOS
+
+- 
+## Cocoapods with local path
+
+    Requirement : [CocoaPods](https://cocoapods.org/) 
+
+    After pod **version > 1.0**, you need to identify the target. Create 'Podfile' in project root folder :
+    ```
+ target 'MyiOSApp' do 
+	pod 'React', :path => '../../AwesomeProject/node_modules/react-native', :subspecs => [
+  	  'Core',
+  	  'RCTImage',
+  	  'RCTNetwork',
+  	  'RCTText',
+  	  'RCTWebSocket',
+	]
+  end
+    ```
+    
+  then ```pod install```
+  
+  ![](pod_integration.png)
+  
+
+# 8.1.1 Package
+
+```
+react-native bundle 
+--platform ios 
+--dev false 
+--entry-file index.ios.js 
+--bundle-output ios/bundle/index.ios.bundle 
+--assets-dest ios/bundle```
+ 
+ 
+ # 8.2 Android
+
+At first I followed the official instruction (which seems very simple) but lots of build or runtime
+error occurs 😂.
+
+Such as:
+
+``` Can't find variable: __fbBatchedBridge (<unknown file>:1)```
+
+```java.lang.UnsatisfiedLinkError: could find DSO to load: libreactnativejni.so```
+
+```android.view.WindowManager$BadTokenException: Unable to add window android.view.ViewRootImpl$W@5d992cf -- permission denied for this window type```
+
+But the demo works corrcetly, so I decided to copy the build settings of it. And finally it works normally on my Nexus 5X. Steps:
+
+- Add the path to the root gradle file,
+![](integration_android_step11.png)
+
+- Modify the app gradle file,
+![](integration_android_step22.png)
+
+    *1. Official demo use this variable to control wheather building different apps for cpus, that will reduce the size of each app, I just ignore it here.
+
+    *2. The version support package matters..
+As react-native Android use many open source projects, if you use some of them already, you should check the version or exclude the from dependencies.  [The list currently](https://github.com/facebook/react-native/blob/master/ReactAndroid/build.gradle) 
+
+    ```
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'com.facebook.fresco:fresco:0.11.0'
+    compile 'com.facebook.fresco:imagepipeline-okhttp3:0.11.0'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.2.3'
+    compile 'com.google.code.findbugs:jsr305:3.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
+    compile 'com.squareup.okhttp3:okhttp-ws:3.2.0'
+    compile 'com.squareup.okio:okio:1.8.0'
+    compile 'org.webkit:android-jsc:r174650'
+```
+- Modify root gradle.properties,
+![](integration_android_step3.png)
+
+- Add proguard rules,
+![](integration_android_step4.png)
+
+- AndroidManifest.xml, you can remove the permission if you don't need debug mode.
+![](integration_android_step5.png)
+
+
+# 8.2.1 Package
+
+```
+react-native bundle 
+--platform android 
+--dev false 
+--entry-file index.android.js 
+--bundle-output android/bundle/index.android.bundle 
+--assets-dest android/bundle/
+```
+
+# 8.3 Before publishing
+
+- Turn off debug Settings. 
+- Implementation of exception handler.
+
+
+# 8.3 Resources
+ 
+ - [Integrating with Existing Apps - iOS](https://facebook.github.io/react-native/docs/embedded-app-ios.html) 
+ - [Integrating with Existing Apps - Android](https://facebook.github.io/react-native/docs/embedded-app-android.html)
+ 
+
+# 9 Hot Update (draf)
+
+# 10 Performance
+
+# 10.1 shouldComponentUpdate
+
+
+This chapter can be applied to all react apps.
+## shouldComponentUpdate
+
+React is usually fast, but you still can improve performance by optimizing function [shouldComponentUpdate](https://facebook.github.io/react/docs/component-specs.html#updating-shouldcomponentupdate). By default it returns true, if returns false, the render function will be skipped.
+
+This function is frequently invoked when states or props are changed. So it's important to **keep it simple and fast**.
+When you called `setState`, the `render` function will always be excuted even if previous states are equal to current. This is where we can make some optimization.
+
+[demo1](https://jsbin.com/figuse/edit?html,js,output)
+
+In demo1, when click button, it will set same state, but render times will still increase.
+
+[demo2](http://jsbin.com/culipes/5/edit?html,js,output)
+
+In demo2, we check the value of name is equal to before or not, if equal return false, then we reduce the times of render function.
+
+But if our states structure is complicated, such as `{ a: { b: { c: [1, 2, 3] }}}`, we have to compare them deeply. This is obviously against the rules we mentioned above, ** keep shouldComponentUpdate simple**
+
+
+## Immutable-js
+[Immutable](https://en.wikipedia.org/wiki/Immutable_object) is a concept from [functional programming](https://en.wikipedia.org/wiki/Functional_programming), one of immutable data features is that it can not be modified after being created. So there are some algorithm to create hash for every data structure(for more [detail](https://en.wikipedia.org/wiki/Persistent_data_structure)).
+We can use this feature to prevent deeply compare, shallow compare is enough.
+Here we will use [immutable-js](https://facebook.github.io/immutable-js/) from facebook
+
+[demo3](http://jsbin.com/vofubiy/8/edit?html,js,output)
+
+In demo3, we click first button several times, times will only plus one time, click second button , times will increase.
+
+# 10.2 Resources
+ - [React.js Reconciliation](https://www.infoq.com/presentations/react-reconciliation)
+ - [Reconciliation](https://facebook.github.io/react/docs/reconciliation.html)
+ - [Advanced Performance](https://facebook.github.io/react/docs/advanced-performance.html)
+ - [Immutable-js](https://facebook.github.io/immutable-js/)
+ - [ShouldComponentUpdate](https://facebook.github.io/react/docs/component-specs.html#updating-shouldcomponentupdate)
+ - [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming)
 
 ---
 
