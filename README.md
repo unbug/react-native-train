@@ -2,7 +2,7 @@
 
 ![](QQ20160705-3.png)
 
-The videos are here \([YouTube](https://www.youtube.com/playlist?list=PLC_rYRxEnwQGLQqrHR0aho33U6DCeJamC), [YouKu](http://v.youku.com/v_show/id_XMTYzODIxMDA2MA==.html?spm=a2hzp.8253876.0.0&f=27615900) \(中文\)!
+The videos are here - [Udemy](https://www.udemy.com/react-native-train/?couponCode=LUCKY-0)
 
 ![](QQ20160727-3.png)
 
